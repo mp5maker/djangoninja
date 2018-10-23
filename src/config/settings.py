@@ -14,6 +14,7 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PREV_DIR = os.path.dirname(os.getcwd())
 
 
 # Quick-start development settings - unsuitable for production
@@ -70,7 +71,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            # os.path.join(BASE_DIR, 'app/templates/landing')
+            os.path.join(PREV_DIR, 'app/templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -146,5 +147,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(PREV_DIR, 'static'),
+    os.path.join(PREV_DIR, 'app'),
 ]

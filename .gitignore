@@ -1,3 +1,9 @@
 node_modules
 img
 elasticsearch
+*.pyc
+__pycache__
+*.jpg
+*.png
+*.ico
+package-lock.json
