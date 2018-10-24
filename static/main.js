@@ -15,6 +15,5 @@
 
     function Controller($scope) {
         $scope.heading = "Checking";
-        console.log($scope.heading);
     }
 })();

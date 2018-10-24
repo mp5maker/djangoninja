@@ -30,7 +30,6 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
 INSTALLED_APPS = [
     ## Django Default ##
     'django.contrib.admin',
@@ -47,6 +46,10 @@ INSTALLED_APPS = [
     'elasticsearch_dsl',
     'django_elasticsearch_dsl',
     'django_elasticsearch_dsl_drf',
+
+    ## Importing Apps ##
+    'api',
+
 ]
 
 ELASTICSEARCH_DSL = {
