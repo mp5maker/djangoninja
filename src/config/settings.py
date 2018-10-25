@@ -26,7 +26,10 @@ SECRET_KEY = 'fg&$c9vuvz)+xz6@tmm*y0o*x60$_&v&1r60-!(bll@*z8n)g('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Allowed Hosts
+ALLOWED_HOSTS = [
+    'localhost',
+]
 
 
 # Application definition
@@ -47,9 +50,11 @@ INSTALLED_APPS = [
     'django_elasticsearch_dsl',
     'django_elasticsearch_dsl_drf',
 
-    ## Importing Apps ##
+    ## Searializer App ##
     'api',
 
+    ## Model App ##
+    'articles'
 ]
 
 ELASTICSEARCH_DSL = {
@@ -153,3 +158,6 @@ STATICFILES_DIRS = [
     os.path.join(PREV_DIR, 'static'),
     os.path.join(PREV_DIR, 'app'),
 ]
+
+# Deploy Static files from another server [Not Working]
+STATIC_ROOT = "http://localhost/djangoninja/static/"

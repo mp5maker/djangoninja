@@ -1,0 +1,38 @@
+{% extends 'articles/layouts/base.html' %}
+
+{% block title %}
+<title>Article List</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col p-5">
+            <h3> Article List </h3>
+            <div class="my-3">
+                <ul class="list-group">
+                    {% for article in articles %}
+                    <li class="list-group-item">
+                        <div class='card'>
+                            <div class="card-header">
+                                <div class="card-title">
+                                    {{ article.title }}
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-body">
+                                    {{ article.snippets }}
+                                </div>
+                                <div class="card-footer">
+                                    {{ article.date }}
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>                
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
