@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'api',
 
     ## Model App ##
-    'articles'
+    'accounts',
+    'articles',
 ]
 
 ELASTICSEARCH_DSL = {
