@@ -14,6 +14,7 @@ pip install django_elasticsearch_dsl_drf
 pip install freeze
 pip install django-filter
 pip install psycopg2
+pip install Pillow
 ```
 
 #### POSTGRES Simple Password Change ####

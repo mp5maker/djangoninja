@@ -1,22 +1,24 @@
 {% extends 'articles/layouts/base.html' %}
 
 {% block title %}
-<title>Article List</title>
+<title>Article Details {{ article.title }}</title>
 {% endblock %}
 
 {% block content %}
 <div class="container">
     <div class="row">
         <div class="col p-5">
-            <h3> Article List </h3>
+            <h3> Article Details </h3>
             <div class="my-3">
                 <ul class="list-group">
-                    {% for article in articles %}
                     <li class="list-group-item">
                         <div class='card'>
+                            <img class="card-img-top" src="{{ article.thumbnail.url }}" />
                             <div class="card-header">
                                 <div class="card-title">
-                                    {{ article.title }}
+                                   <strong>
+                                       {{ article.title }}
+                                   </strong> 
                                 </div>
                             </div>
                             <div class="card-content">
@@ -29,8 +31,7 @@
                             </div>
                         </div>
                     </li>
-                    {% endfor %}
-                </ul>                
+                </ul>
             </div>
         </div>
     </div>

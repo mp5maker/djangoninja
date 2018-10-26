@@ -15,9 +15,13 @@ urlpatterns = [
     url(r'^$', landing),
 ]  
 
+# Static Files
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
     urlpatterns += staticfiles_urlpatterns()
 else:
     ## Not Working ##
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# Media Files
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

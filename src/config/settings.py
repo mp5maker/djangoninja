@@ -161,3 +161,7 @@ STATICFILES_DIRS = [
 
 # Deploy Static files from another server [Not Working]
 STATIC_ROOT = "http://localhost/djangoninja/static/"
+
+# Media Files
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(PREV_DIR, 'media')
