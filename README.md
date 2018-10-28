@@ -47,3 +47,8 @@ password: test1234
 python manage.py makemigrations
 python manage.py migrate
 ```
+
+Elastic Search
+```bash
+python manage.py search_index --rebuild
+```
