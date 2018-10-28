@@ -1,4 +1,18 @@
+# Models
+from django.db.models import Q
+from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.models import User
+from articles.models import Article
+
+# Serializers
+from .serializers import (
+    UserSerializer,
+    ArticleSerializer,
+    ArticleDocumentSerializer,
+)
+
 # Api Views
+from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.generics import (
     CreateAPIView,
@@ -13,7 +27,11 @@ from rest_framework.generics import (
 )
 
 # Authentication
-from rest_framework.authentication import SessionAuthentication, BasicAuthentication
+from rest_framework.authentication import (
+    SessionAuthentication, 
+    BasicAuthentication,
+    TokenAuthentication,
+)
 
 # Permisions
 from rest_framework.permissions import (
@@ -38,6 +56,9 @@ from rest_framework.filters import (
     OrderingFilter
 )
 
+from rest_framework.decorators import (
+    action,
+)
 # Custom Pagination
 from .paginations import (
    ApiLimitOffsetPagination,
@@ -69,46 +90,33 @@ from .documents import (
     ArticleDocument,
 )
 
-# Serializers
-from .serializers import (
-    UserSerializer,
-    ArticleSerializer,
-    ArticleDocumentSerializer,
-)
-
-# Models
-from django.contrib.auth.models import User
-from articles.models import Article
-
 class UserListView(ListAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    # authentication_classes = (SessionAuthentication, BasicAuthentication, )
-    authentication_classes = (BasicAuthentication, )
+    authentication_classes = (SessionAuthentication, BasicAuthentication, TokenAuthentication)
     permission_classes = (IsAuthenticated, )
     pagination_class = ApiPageNumberPagination
 
 class UserDetailView(RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    # authentication_classes = (SessionAuthentication, BasicAuthentication, )
-    authentication_classes = (BasicAuthentication, )
+    authentication_classes = (SessionAuthentication, BasicAuthentication, TokenAuthentication)
     permission_classes = (IsAuthenticated, )
     lookup_field = "id"
 
+# @csrf_exempt
 class ArticleListView(ListAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
-    # authentication_classes = (SessionAuthentication, BasicAuthentication, )
-    authentication_classes = (BasicAuthentication, )
+    authentication_classes = (SessionAuthentication, BasicAuthentication, TokenAuthentication)
     permission_classes = (IsAuthenticated, )
     pagination_class = ApiPageNumberPagination
+
 
 class ArticleSearchView(DocumentViewSet):
     document = ArticleDocument
     serializer_class = ArticleDocumentSerializer
-    # authentication_classes = (SessionAuthentication, BasicAuthentication, )
-    authentication_classes = (BasicAuthentication, )
+    authentication_classes = (SessionAuthentication, BasicAuthentication, TokenAuthentication)
     permission_classes = (IsAuthenticated, )
     lookup_field = 'id'
 
