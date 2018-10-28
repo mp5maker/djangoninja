@@ -1,3 +1,5 @@
+# Api Views
+from rest_framework.views import APIView
 from rest_framework.generics import (
     CreateAPIView,
     ListAPIView,
@@ -10,8 +12,43 @@ from rest_framework.generics import (
     ValidationError,
 )
 
-from django_elasticsearch_dsl_drf.viewsets import DocumentViewSet
+# Authentication
+from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 
+# Permisions
+from rest_framework.permissions import (
+    AllowAny,
+    IsAuthenticated,
+    IsAdminUser,
+    IsAuthenticatedOrReadOnly,
+)
+
+# Mixins
+from rest_framework.mixins import (
+    ListModelMixin,
+    CreateModelMixin,
+    RetrieveModelMixin,
+    UpdateModelMixin,
+    DestroyModelMixin
+)
+
+# Filters
+from rest_framework.filters import (
+    SearchFilter,
+    OrderingFilter
+)
+
+# Custom Pagination
+from .paginations import (
+   ApiLimitOffsetPagination,
+   ApiPageNumberPagination,
+)
+
+# Custom Permission
+from .permissions import IsOwnerOrReadOnly
+
+# Elastic Search
+from django_elasticsearch_dsl_drf.viewsets import DocumentViewSet
 from django_elasticsearch_dsl_drf.constants import (
     LOOKUP_FILTER_RANGE,
     LOOKUP_QUERY_IN,
@@ -27,35 +64,52 @@ from django_elasticsearch_dsl_drf.filter_backends import (
     SearchFilterBackend,
 )
 
+# Elastic Search Document
 from .documents import (
     ArticleDocument,
 )
 
+# Serializers
 from .serializers import (
     UserSerializer,
     ArticleSerializer,
     ArticleDocumentSerializer,
 )
 
+# Models
 from django.contrib.auth.models import User
 from articles.models import Article
 
 class UserListView(ListAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    # authentication_classes = (SessionAuthentication, BasicAuthentication, )
+    authentication_classes = (BasicAuthentication, )
+    permission_classes = (IsAuthenticated, )
+    pagination_class = ApiPageNumberPagination
 
 class UserDetailView(RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    # authentication_classes = (SessionAuthentication, BasicAuthentication, )
+    authentication_classes = (BasicAuthentication, )
+    permission_classes = (IsAuthenticated, )
     lookup_field = "id"
 
 class ArticleListView(ListAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
+    # authentication_classes = (SessionAuthentication, BasicAuthentication, )
+    authentication_classes = (BasicAuthentication, )
+    permission_classes = (IsAuthenticated, )
+    pagination_class = ApiPageNumberPagination
 
 class ArticleSearchView(DocumentViewSet):
     document = ArticleDocument
     serializer_class = ArticleDocumentSerializer
+    # authentication_classes = (SessionAuthentication, BasicAuthentication, )
+    authentication_classes = (BasicAuthentication, )
+    permission_classes = (IsAuthenticated, )
     lookup_field = 'id'
 
     filter_backends = [
