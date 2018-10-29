@@ -5,7 +5,7 @@
 4. Django Elastic Search
 
 ```bash
-pip install Django==1.11
+pip install Django==1.11.16
 pip install djangorestframework
 pip install django-rest-auth
 pip install elasticsearch_dsl
@@ -15,6 +15,8 @@ pip install freeze
 pip install django-filter
 pip install psycopg2
 pip install Pillow
+pip install graphene_django
+pip install django-graphiql
 ```
 
 #### POSTGRES Simple Password Change ####

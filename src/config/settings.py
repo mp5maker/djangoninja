@@ -53,6 +53,9 @@ INSTALLED_APPS = [
     'django_elasticsearch_dsl',
     'django_elasticsearch_dsl_drf',
 
+    ## GraphQL ##
+    'graphene_django',
+
     ## Django Default ##
     'django.contrib.admin',
     'django.contrib.auth',
@@ -83,6 +86,10 @@ ELASTICSEARCH_DSL = {
     'default': {
         'hosts': 'localhost:9200'
     },
+}
+
+GRAPHENE = {
+    'SCHEMA': 'api.schema.schema'
 }
 
 MIDDLEWARE = [

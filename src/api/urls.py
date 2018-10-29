@@ -11,6 +11,7 @@ from .views import (
 
 app_name = "api"
 
+# Elastic Search
 search_router = SimpleRouter()
 search_router.register(
     r'article',
