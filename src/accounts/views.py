@@ -15,22 +15,15 @@ def signup_view(request, *args, **kwargs):
 
 def login_view(request, *args, **kwargs):
     if request.method == "POST":
-        # form = AuthenticationForm(data=request.POST)
-        # if form.is_valid():
-        #     user = form.get_user()
-        #     if user is not None:
-        #         login(request, user)
-        #         if 'next' in request.POST:
-        #             return redirect(request.POST.get('next'))
-        #         else:
-        #             return redirect('articles:article-list')
-        user = authenticate(username=request.POST.get('username'), password=request.POST.get('password'))
-        if user is not None:
-            login(request, user)
-            if 'next' in request.POST:
-                return redirect(request.POST.get('next'))
-            else:
-                return redirect('articles:article-list')
+        form = AuthenticationForm(data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            if user is not None:
+                login(request, user)
+                if 'next' in request.POST:
+                    return redirect(request.POST.get('next'))
+                else:
+                    return redirect('articles:article-list')
     else:
         form = AuthenticationForm()
     return render(request, 'accounts/login.html', {"form": form})
