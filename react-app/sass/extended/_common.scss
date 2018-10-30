@@ -1,0 +1,13 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    @extend .pointer;
+}

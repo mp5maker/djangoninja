@@ -10,15 +10,27 @@ from graphene_django.views import GraphQLView
 from .schema import schema
 
 from django.contrib import admin
-from .views import angular
+from .views import angular, react
 
 urlpatterns = [
+    # Admin
     url(r'^admin/', admin.site.urls),
+    
+    # GraphQL
     url(r'^graphql', GraphQLView.as_view(graphiql=True, schema=schema)),
+    
+    # Django Rest Framework
     url(r'^api/v1/', include('api.urls')),
+    
+    # Raw Django
     url(r'^article/', include('articles.urls')),
     url(r'^accounts/', include('accounts.urls')),
+    
+    # Angular App
     url(r'^angular-app/', angular, name="angular-app"),
+
+    # React App
+    url(r'^react-app/', react, name="react-app"),
 ]  
 
 # Static Files

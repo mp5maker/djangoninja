@@ -1,0 +1,95 @@
+// Create Margin
+@mixin create-margin($i, $type) {
+    @if $type == 'top' {
+        margin-top: #{$i}px;
+    } @else if $type == 'bottom' {
+        margin-bottom: #{$i}px;
+    } @else if $type == 'left' {
+        margin-left: #{$i}px;
+    } @else if $type == 'right' {
+        margin-right: #{$i}px;
+    } @else if $type == 'y-axis' {
+        margin-top: #{$i}px;
+        margin-bottom: #{$i}px;
+    } @else if $type == "x-axis" {
+        margin-left: #{$i}px;
+        margin-right: #{$i}px;
+    } @else {
+        margin-top: #{$i}px;
+        margin-bottom: #{$i}px;
+        margin-left: #{$i}px;
+        margin-right: #{$i}px;
+    }
+}
+
+// Create Padding
+@mixin create-padding($i, $type) {
+    @if $type == 'top' {
+        padding-top: #{$i}px;
+    } @else if $type == 'bottom' {
+        padding-bottom: #{$i}px;
+    } @else if $type == 'left' {
+        padding-left: #{$i}px;
+    } @else if $type == 'right' {
+        padding-right: #{$i}px;
+    } @else if $type == 'y-axis' {
+        padding-top: #{$i}px;
+        padding-bottom: #{$i}px;
+    } @else if $type == "x-axis" {
+        padding-left: #{$i}px;
+        padding-right: #{$i}px;
+    } @else {
+        padding-top: #{$i}px;
+        padding-bottom: #{$i}px;
+        padding-left: #{$i}px;
+        padding-right: #{$i}px;
+    }
+}
+
+// Creating Margin and Padding
+@for $i from 0 through 1000 {
+    // Margin
+    .m-t-#{$i}{
+        @include create-margin($i, 'top')
+    }
+    .m-b-#{$i}{
+        @include create-margin($i, 'bottom')
+    }
+    .m-l-#{$i}{
+        @include create-margin($i, 'left')
+    }
+    .m-r-#{$i}{
+        @include create-margin($i, 'right')
+    }
+    .m-y-#{$i}{
+        @include create-margin($i, 'y-axis')
+    }
+    .m-x-#{$i}{
+        @include create-margin($i, 'x-axis')
+    }
+    .m-a-#{$i}{
+        @include create-margin($i, 'all')
+    }
+    // Padding
+    .p-t-#{$i}{
+        @include create-padding($i, 'top')
+    }
+    .p-b-#{$i}{
+        @include create-padding($i, 'bottom')
+    }
+    .p-l-#{$i}{
+        @include create-padding($i, 'left')
+    }
+    .p-r-#{$i}{
+        @include create-padding($i, 'right')
+    }
+    .p-y-#{$i}{
+        @include create-padding($i, 'y-axis')
+    }
+    .p-x-#{$i}{
+        @include create-padding($i, 'x-axis')
+    }
+    .p-a-#{$i}{
+        @include create-padding($i, 'all')
+    }
+}

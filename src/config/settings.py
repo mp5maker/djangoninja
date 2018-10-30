@@ -108,7 +108,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(PREV_DIR, 'app/templates')
+            os.path.join(PREV_DIR, 'app/templates'),
+            os.path.join(PREV_DIR, 'react-app/static/landing'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -184,8 +185,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
+    # For Angular Codes
     os.path.join(PREV_DIR, 'static'),
     os.path.join(PREV_DIR, 'app'),
+    
+    # For React Codes
+    os.path.join(PREV_DIR, 'react-app/static'),
 ]
 
 # Deploy Static files from another server [Not Working]

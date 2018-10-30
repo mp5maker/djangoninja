@@ -44,6 +44,22 @@ npm install --save angular angular-animate angular-ui-router
 # npm install --save graphql.js 
 ```
 
+#### React Client Setup ####
+```bash
+npm install --save-dev @babel/cli @babel/core @babel/preset-env 
+npm install --save-dev @babel/preset-env @babel/preset-react
+npm install --save-dev babel-loader prop-types
+npm install --save-dev react react-dom 
+npm install --save-dev webpack webpack-cli webpack-dev-server
+npm install --save react-router
+npm install --save react-router-dom
+npm install --save react-router-native
+npm install --save prop-types
+npm install --save react-dropzone
+npm install --save react-image-crop
+npm install --save react-markdown
+```
+
 #### POSTGRES Simple Password Change ####
 * Servers
     *   Databases

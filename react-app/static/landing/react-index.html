@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>React Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'react-library.css' %}" />
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'react-main.css' %}" />
+</head>
+
+<body ng-app="ninja">
+    {% verbatim %}
+    <div class="container-fluid" ng-controller="mainCtrl">
+        <div class="row">
+            <div class="col">
+                <div id="react-app"></div>
+            </div>
+        </div>
+    </div>
+    {% endverbatim %}
+    <script src="{% static 'react-library.js' %}"></script>
+    <script src="{% static 'react-main.js' %}"></script>
+</body>
+</html>
