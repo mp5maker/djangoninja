@@ -22,7 +22,8 @@ pip install psycopg2
 pip install Pillow
 pip install graphene_django
 pip install django-graphiql
-pip install opencv-contrib-python --upgrade
+# pip install opencv-python
+# pip install opencv-contrib-python --upgrade
 ```
 
 #### Client Setup ####
