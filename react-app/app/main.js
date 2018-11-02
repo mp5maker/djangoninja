@@ -1,22 +1,8 @@
-import { Component } from 'react'
 import { render } from 'react-dom'
-
-class Landing extends Component {
-    constructor(props) {
-        super(props)
-    }
-
-    render() {
-        return (
-            <div className="text-center mt-5">
-                React App Landing Page
-            </div>
-        )
-    }
-}
+import { Sidebar } from './Layouts/Sidebar'
 
 render(
-    <Landing />,
+    <Sidebar />,
     document.getElementById('react-app')
 )
 

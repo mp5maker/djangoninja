@@ -1,0 +1,19 @@
+.sidebar-menu {
+    width: 200px;
+    background-color: $light-theme-primary-color;
+    color: $light-theme-secondary-color;
+    .sidebar-heading {
+        height: 56px;
+    }
+    .sidebar-header {
+        height: 36px;
+        .sidebar-heading-container {
+            padding: 0 16px !important;
+            .sidebar-brand {
+                .sidebar-logo {
+                    padding: 0 16px !important;
+                }
+            }
+        }
+    }
+}

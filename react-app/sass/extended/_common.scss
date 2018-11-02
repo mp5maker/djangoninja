@@ -7,7 +7,3 @@ body, html {
 .pointer {
     cursor: pointer;
 }
-
-.nav-link:hover {
-    @extend .pointer;
-}

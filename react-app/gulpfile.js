@@ -7,7 +7,7 @@ gulp.task('default', ['css', 'librarycss', 'libraryjs']);
 
 // Modifying Bootstrap 
 gulp.task('css', function () {
-    gulp.src('sass/bootstrap.scss')
+    gulp.src('sass/**/*.scss')
         .pipe(concat('react-main.css'))
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('static'))
@@ -57,6 +57,6 @@ gulp.task('libraryjs', function () {
 
 // gulp.task('watch', ['css', 'js'], function () {
 gulp.task('watch', ['css'], function () {
-    gulp.watch('app/sass/**/*.scss', ['css']);
+    gulp.watch('sass/**/*.scss', ['css']);
     // gulp.watch('app/**/*.js', ['js']);
 })

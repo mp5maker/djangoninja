@@ -46,7 +46,17 @@
     }
 }
 
-// Creating Margin and Padding
+// Create Width
+@mixin create-width($i) {
+    width: #{$i}px
+}
+
+// Create Height
+@mixin create-height($i) {
+    height: #{$i}px
+}
+
+// Creating Margin, Padding, Width, Height
 @for $i from 0 through 1000 {
     // Margin
     .m-t-#{$i}{
@@ -91,5 +101,11 @@
     }
     .p-a-#{$i}{
         @include create-padding($i, 'all')
+    }
+    .height-#{$i}{
+        @include create-height($i);
+    }
+    .width-#{$i}{
+        @include create-width($i);
     }
 }
