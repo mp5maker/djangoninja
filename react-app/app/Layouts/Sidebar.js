@@ -1,6 +1,7 @@
 import { Component } from 'react'
 import { List } from '../Components/List'
 
+// JSON format of the menu list
 const menuList = [
     {
         "category": "Menu",
@@ -72,9 +73,7 @@ const menuList = [
     }
 ]
 
-/**
- * Collectiosn of Sidebar List
- */
+// Create Sidebar
 class Sidebar extends Component {
     constructor(props) {
         super(props)
@@ -97,9 +96,7 @@ class Sidebar extends Component {
     }
 }
 
-/**
- * Creates SidebarHeading
- */
+// Create Sidebar Heading
 class SidebarHeading extends Component {
     render() {
         return (
@@ -115,9 +112,7 @@ class SidebarHeading extends Component {
     }
 }
 
-/**
- * Creates Sidebar
- */
+// Creates Sidebar Conten
 class SidebarContent extends Component {
     constructor(props) {
         super(props)
@@ -148,9 +143,7 @@ class SidebarContent extends Component {
     }
 }
 
-/**
- * Creates Sidebar link
- */
+// Create Sidebar Link
 class SidebarLink extends Component {
     constructor(props) {
         super(props)
@@ -172,6 +165,7 @@ class SidebarLink extends Component {
     }
 }
 
+// Create Sidebar Footer
 class SidebarFooter extends Component {
     constructor(props) {
         super(props)   

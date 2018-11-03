@@ -2,31 +2,45 @@ import { Component } from 'react'
 
 /**
  * @ Creates List
- * Required Field: data [properties: dropdown, bsClass, link, name] (No DropDown)
- * Required Field: data [properties: dropdown, id, bsClass, link, name, DropdownArray] (Dropdown)
+ * Required Field No Dropdown: Category, List [{dropdown, name, link, icon}]
+ * Required Field Dropdown: Category, List[{dropdown, name, link, icon, dropdownList[{}]}]
  */
 class List extends Component {
     constructor(props) {
         super(props)
         this.state = {
             collapse: true,
+            collapsibleElement: null
         }
         this.handleOnClickCollapse = this.handleOnClickCollapse.bind(this)
         this.handleOnMouseEnterCollapse = this.handleOnMouseEnterCollapse.bind(this)
         this.handleOnMouseLeaveCollapse = this.handleOnMouseLeaveCollapse.bind(this)
     }
 
+    /**
+     * Toggles the dropdown 
+     * @param {object} event 
+     */
     toggleHideShow(event) {
         const element = event.target.nextElementSibling;
         if (element) {
+            this.setState({
+                collapsibleElement: element
+            })
             if (element.style.maxHeight) {
                 element.style.maxHeight = null
             } else {
                 element.style.maxHeight = element.scrollHeight + "px"
             }
+        } else {
+            this.state.collapsibleElement.style.maxHeight = null
         }
     }
 
+    /**
+     * Toggle the dropdown using click
+     * @param {object} event 
+     */
     handleOnClickCollapse(event) {
         this.setState({
             collapse: ! this.state.collapse
@@ -34,6 +48,10 @@ class List extends Component {
         this.toggleHideShow(event)
     }
 
+    /**
+     * Expand the dropdown on hover
+     * @param {object} event 
+     */
     handleOnMouseEnterCollapse(event) {
         this.setState({
             collapse: false
@@ -41,6 +59,10 @@ class List extends Component {
         this.toggleHideShow(event)
     }
     
+    /**
+     * Collapse the dropdown on mouse leave
+     * @param {object} event 
+     */
     handleOnMouseLeaveCollapse(event) {
         this.setState({
             collapse: true
@@ -48,6 +70,11 @@ class List extends Component {
         this.toggleHideShow(event)
     }
     
+    /**
+     * Make the dom element know about the update
+     * @param {object} prevProps 
+     * @param {object} prevState 
+     */
     componentDidUpdate(prevProps, prevState) {
         if (this.state.collapse !== prevState.collapse) {
             this.setState({
@@ -56,6 +83,7 @@ class List extends Component {
         }
     }
 
+    // Rendering the DOM
     render() {
         const { data } = this.props
         const { collapse } = this.state
