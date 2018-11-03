@@ -31,28 +31,31 @@ class List extends Component {
     render() {
         const { data } = this.props
         const { collapse } = this.state
-
         if (data.dropdown) {
             return (
                 <div>
                     <li className="dropdown-group">
-                        <a onClick={this.handleOnClickCollapse}>
-                            <span className="p-x-16">
-                                <i className={data.icon + " fa-fw"}></i>
-                            </span>
-                            <span>
-                                {data.name}
-                            </span>
-                        </a>
-                        <ul className={"list-unstyled " + (collapse ? 'd-none' : 'sub-list')}>
-                            {
-                                _.map(data.dropdownList, (menu, index) => {
-                                    return (
-                                        <List data={menu} key={index} />
-                                    )
-                                })
-                            }
-                        </ul>
+                        <div onClick={this.handleOnClickCollapse} className="dropdown-group-name">
+                            <a>
+                                <span className="p-x-16">
+                                    <i className={data.icon + " fa-fw"}></i>
+                                </span>
+                                <span>
+                                    {data.name}
+                                </span>
+                            </a>
+                        </div>
+                        <div className={(collapse ? 'd-none' : 'dropdown-group-list')}>
+                            <ul className="list-unstyled">
+                                {
+                                    _.map(data.dropdownList, (menu, index) => {
+                                        return (
+                                            <List data={menu} key={index} />
+                                        )
+                                    })
+                                }
+                            </ul>
+                        </div>
                     </li>
                 </div>
             )

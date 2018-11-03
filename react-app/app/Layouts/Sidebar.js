@@ -8,23 +8,46 @@ const menuList = [
             {
                 "dropdown": false,
                 "name": "Home",
-                "bsClass": "",
+                "bsClass": "no-dropdown",
                 "link": "http://sphotonkhan.com/tech",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "bsClass": "",
+                "bsClass": "no-dropdown",
                 "link": "http://sphotonkhan.com/tech",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "bsClass": "",
+                "bsClass": "no-dropdown",
                 "link": "http://sphotonkhan.com/tech",
                 "icon": "fa fa-chevron-up"
+            },
+            {
+                "dropdown": true,
+                "id": "sidebar-info",
+                "name": "Info",
+                "bsClass": "",
+                "icon": "fa fa-info",
+                "dropdownList": [
+                    {
+                        "dropdown": false,
+                        "name": "Paramedics",
+                        "bsClass": "",
+                        "link": "http://sphotonkhan.com/tech",
+                        "icon": "fa fa-chevron-left",
+                    },
+                    {
+                        "dropdown": false,
+                        "name": "Help",
+                        "bsClass": "",
+                        "link": "http://sphotonkhan.com/tech",
+                        "icon": "fa fa-chevron-right",
+                    },
+                ]
             },
         ]
     },
@@ -53,7 +76,7 @@ const menuList = [
                         "icon": "fa fa-chevron-right",
                     },
                 ]
-            }
+            },
         ]
     }
 ]
