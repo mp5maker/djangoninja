@@ -65765,16 +65765,42 @@ body, html {
 
 .sidebar-menu {
   width: 200px;
+  height: 100vh;
   background-color: #373a3c;
   color: #e4e6e8; }
   .sidebar-menu .sidebar-heading {
+    display: flex;
+    align-items: center;
     height: 56px; }
+    .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {
+      padding-left: 16px; }
+    .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand span {
+      font-size: 20px;
+      font-weight: 700;
+      margin-left: 10px;
+      padding-right: 16px; }
   .sidebar-menu .sidebar-header {
-    height: 36px; }
-    .sidebar-menu .sidebar-header .sidebar-heading-container {
-      padding: 0 16px !important; }
-      .sidebar-menu .sidebar-header .sidebar-heading-container .sidebar-brand .sidebar-logo {
-        padding: 0 16px !important; }
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 36px;
+    padding: 0 16px; }
+    .sidebar-menu .sidebar-header span.text-muted {
+      font-size: 90%;
+      font-weight: 400; }
+  .sidebar-menu .sidebar-content li {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    font-size: 90%;
+    font-weight: 400; }
+    .sidebar-menu .sidebar-content li a {
+      color: #e4e6e8 !important; }
+    .sidebar-menu .sidebar-content li.dropdown-group a {
+      height: 36px !important;
+      width: 100% !important; }
+    .sidebar-menu .sidebar-content li.dropdown-group ul.sublist li {
+      height: 32px; }
 
 .alert {
   position: relative;
@@ -125455,16 +125481,42 @@ body, html {
 
 .sidebar-menu {
   width: 200px;
+  height: 100vh;
   background-color: #373a3c;
   color: #e4e6e8; }
   .sidebar-menu .sidebar-heading {
+    display: flex;
+    align-items: center;
     height: 56px; }
+    .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {
+      padding-left: 16px; }
+    .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand span {
+      font-size: 20px;
+      font-weight: 700;
+      margin-left: 10px;
+      padding-right: 16px; }
   .sidebar-menu .sidebar-header {
-    height: 36px; }
-    .sidebar-menu .sidebar-header .sidebar-heading-container {
-      padding: 0 16px !important; }
-      .sidebar-menu .sidebar-header .sidebar-heading-container .sidebar-brand .sidebar-logo {
-        padding: 0 16px !important; }
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 36px;
+    padding: 0 16px; }
+    .sidebar-menu .sidebar-header span.text-muted {
+      font-size: 90%;
+      font-weight: 400; }
+  .sidebar-menu .sidebar-content li {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    font-size: 90%;
+    font-weight: 400; }
+    .sidebar-menu .sidebar-content li a {
+      color: #e4e6e8 !important; }
+    .sidebar-menu .sidebar-content li.dropdown-group a {
+      height: 36px !important;
+      width: 100% !important; }
+    .sidebar-menu .sidebar-content li.dropdown-group ul.sublist li {
+      height: 32px; }
 
 .form-control {
   display: block;
@@ -188231,16 +188283,42 @@ body, html {
 
 .sidebar-menu {
   width: 200px;
+  height: 100vh;
   background-color: #373a3c;
   color: #e4e6e8; }
   .sidebar-menu .sidebar-heading {
+    display: flex;
+    align-items: center;
     height: 56px; }
+    .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {
+      padding-left: 16px; }
+    .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand span {
+      font-size: 20px;
+      font-weight: 700;
+      margin-left: 10px;
+      padding-right: 16px; }
   .sidebar-menu .sidebar-header {
-    height: 36px; }
-    .sidebar-menu .sidebar-header .sidebar-heading-container {
-      padding: 0 16px !important; }
-      .sidebar-menu .sidebar-header .sidebar-heading-container .sidebar-brand .sidebar-logo {
-        padding: 0 16px !important; }
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 36px;
+    padding: 0 16px; }
+    .sidebar-menu .sidebar-header span.text-muted {
+      font-size: 90%;
+      font-weight: 400; }
+  .sidebar-menu .sidebar-content li {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    font-size: 90%;
+    font-weight: 400; }
+    .sidebar-menu .sidebar-content li a {
+      color: #e4e6e8 !important; }
+    .sidebar-menu .sidebar-content li.dropdown-group a {
+      height: 36px !important;
+      width: 100% !important; }
+    .sidebar-menu .sidebar-content li.dropdown-group ul.sublist li {
+      height: 32px; }
 
 .align-baseline {
   vertical-align: baseline !important; }

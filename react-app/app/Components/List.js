@@ -8,32 +8,52 @@ import { Component } from 'react'
 class List extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            collapse: true
+        }
+        this.handleOnClickCollapse = this.handleOnClickCollapse.bind(this)
+    }
+
+    handleOnClickCollapse() {
+        this.setState({
+            collapse: ! this.state.collapse
+        })
+    }
+    
+    componentDidUpdate(prevProps, prevState) {
+        if (this.state.collapse !== prevState.collapse) {
+            this.setState({
+                collapse: this.state.collapse
+            })
+        }
     }
 
     render() {
         const { data } = this.props
+        const { collapse } = this.state
+
         if (data.dropdown) {
             return (
                 <div>
-                    <div>
-                        <a href={"#" + data.id} data-toggle="collapse" aria-expanded="false" className="dropdown-toggle">
-                            <span className="p-l-25 p-r-5">
+                    <li className="dropdown-group">
+                        <a onClick={this.handleOnClickCollapse}>
+                            <span className="p-x-16">
                                 <i className={data.icon + " fa-fw"}></i>
                             </span>
-                            <span className="p-r-25">
+                            <span>
                                 {data.name}
                             </span>
                         </a>
-                    </div>
-                    <ul className="collapse list-unstyled" id={data.id} >
-                        {
-                            _.map(data.dropdownList, (menu, index) => {
-                                return (
-                                    <List data={menu} key={index} />
-                                )
-                            })
-                        }
-                    </ul>
+                        <ul className={"list-unstyled " + (collapse ? 'd-none' : 'sub-list')}>
+                            {
+                                _.map(data.dropdownList, (menu, index) => {
+                                    return (
+                                        <List data={menu} key={index} />
+                                    )
+                                })
+                            }
+                        </ul>
+                    </li>
                 </div>
             )
         } else {
@@ -41,10 +61,10 @@ class List extends Component {
                 <div>
                     <li className={data.bsClass}>
                         <a href={data.link}>
-                            <span className="p-l-25 p-r-5">
+                            <span className="p-x-16">
                                 <i className={data.icon + " fa-fw"}></i>
                             </span>
-                            <span className="p-r-25">
+                            <span>
                                 {data.name}
                             </span>
                         </a>

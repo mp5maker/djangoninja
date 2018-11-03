@@ -1,17 +1,56 @@
 .sidebar-menu {
     width: 200px;
+    height: 100vh;
     background-color: $light-theme-primary-color;
     color: $light-theme-secondary-color;
     .sidebar-heading {
+        display: flex;
+        align-items: center;
         height: 56px;
+        .sidebar-heading-container {
+            .sidebar-brand {
+                img.sidebar-logo {
+                    padding-left: 16px;
+                }
+                span {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-left: 10px;
+                    padding-right: 16px;
+                }
+            }
+        }
     }
     .sidebar-header {
+        display: flex;
+        align-items: center;
+        width: 200px;
         height: 36px;
-        .sidebar-heading-container {
-            padding: 0 16px !important;
-            .sidebar-brand {
-                .sidebar-logo {
-                    padding: 0 16px !important;
+        padding: 0 16px;
+        span.text-muted {
+            font-size: 90%;
+            font-weight: 400;
+        }
+    }
+    .sidebar-content {
+        li {
+            display: flex;
+            align-items: center;
+            height: 36px;
+            font-size: 90%;
+            font-weight: 400;
+            a {
+                color: $light-theme-secondary-color !important;
+            }
+            &.dropdown-group {
+                a {
+                    height: 36px !important;
+                    width: 100% !important;
+                }
+                ul.sublist {
+                    li {
+                        height: 32px;
+                    }
                 }
             }
         }
