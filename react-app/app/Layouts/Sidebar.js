@@ -8,21 +8,18 @@ const menuList = [
             {
                 "dropdown": false,
                 "name": "Home",
-                "bsClass": "no-dropdown",
                 "link": "http://sphotonkhan.com/tech",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "bsClass": "no-dropdown",
                 "link": "http://sphotonkhan.com/tech",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "bsClass": "no-dropdown",
                 "link": "http://sphotonkhan.com/tech",
                 "icon": "fa fa-chevron-up"
             },
@@ -30,20 +27,17 @@ const menuList = [
                 "dropdown": true,
                 "id": "sidebar-info",
                 "name": "Info",
-                "bsClass": "",
                 "icon": "fa fa-info",
                 "dropdownList": [
                     {
                         "dropdown": false,
                         "name": "Paramedics",
-                        "bsClass": "",
                         "link": "http://sphotonkhan.com/tech",
                         "icon": "fa fa-chevron-left",
                     },
                     {
                         "dropdown": false,
                         "name": "Help",
-                        "bsClass": "",
                         "link": "http://sphotonkhan.com/tech",
                         "icon": "fa fa-chevron-right",
                     },
@@ -58,20 +52,17 @@ const menuList = [
                 "dropdown": true,
                 "id": "sidebar-info",
                 "name": "Info",
-                "bsClass": "",
                 "icon": "fa fa-info",
                 "dropdownList": [
                     {
                         "dropdown": false,
                         "name": "Paramedics",
-                        "bsClass": "",
                         "link": "http://sphotonkhan.com/tech",
                         "icon": "fa fa-chevron-left",
                     },
                     {
                         "dropdown": false,
                         "name": "Help",
-                        "bsClass": "",
                         "link": "http://sphotonkhan.com/tech",
                         "icon": "fa fa-chevron-right",
                     },
@@ -99,6 +90,7 @@ class Sidebar extends Component {
                 <div className="sidebar-menu">
                     <SidebarHeading />
                     <SidebarContent menuList={menuList} />
+                    <SidebarFooter />
                 </div>
             </div>
         )
@@ -156,6 +148,9 @@ class SidebarContent extends Component {
     }
 }
 
+/**
+ * Creates Sidebar link
+ */
 class SidebarLink extends Component {
     constructor(props) {
         super(props)
@@ -172,6 +167,35 @@ class SidebarLink extends Component {
                         )
                     }) 
                 }
+            </div>
+        )
+    }
+}
+
+class SidebarFooter extends Component {
+    constructor(props) {
+        super(props)   
+    }
+
+    render() {
+        return (
+            <div>
+                <div className="sidebar-footer">
+                    <div className="sidebar-footer-profile">
+                        <span className="sidebar-footer-profile-image">
+                            <img src="/media/javascript.jpg" alt="sidebar-footer-user-photo" />
+                        </span>
+                        <span className="sidebar-footer-profile-detail">
+                            <div className="sidebar-footer-profile-name">
+                                Hello
+                            </div>
+                            <div className="sidebar-footer-profile-status">
+                                <i className="fa fa-circle text-success"></i>
+                                <span>online</span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
             </div>
         )
     }

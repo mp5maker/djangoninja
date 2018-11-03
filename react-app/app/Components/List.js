@@ -9,15 +9,43 @@ class List extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            collapse: true
+            collapse: true,
         }
         this.handleOnClickCollapse = this.handleOnClickCollapse.bind(this)
+        this.handleOnMouseEnterCollapse = this.handleOnMouseEnterCollapse.bind(this)
+        this.handleOnMouseLeaveCollapse = this.handleOnMouseLeaveCollapse.bind(this)
     }
 
-    handleOnClickCollapse() {
+    toggleHideShow(event) {
+        const element = event.target.nextElementSibling;
+        if (element) {
+            if (element.style.maxHeight) {
+                element.style.maxHeight = null
+            } else {
+                element.style.maxHeight = element.scrollHeight + "px"
+            }
+        }
+    }
+
+    handleOnClickCollapse(event) {
         this.setState({
             collapse: ! this.state.collapse
         })
+        this.toggleHideShow(event)
+    }
+
+    handleOnMouseEnterCollapse(event) {
+        this.setState({
+            collapse: false
+        })
+        this.toggleHideShow(event)
+    }
+    
+    handleOnMouseLeaveCollapse(event) {
+        this.setState({
+            collapse: true
+        })
+        this.toggleHideShow(event)
     }
     
     componentDidUpdate(prevProps, prevState) {
@@ -34,8 +62,13 @@ class List extends Component {
         if (data.dropdown) {
             return (
                 <div>
-                    <li className="dropdown-group">
-                        <div onClick={this.handleOnClickCollapse} className="dropdown-group-name">
+                    <li 
+                        onMouseEnter={this.handleOnMouseEnterCollapse}
+                        onMouseLeave={this.handleOnMouseLeaveCollapse} 
+                        className="dropdown-group">
+                        <div
+                            onClick={this.handleOnClickCollapse} 
+                            className={"dropdown-group-name " + (collapse ? "" : "active")}>
                             <a>
                                 <span className="p-x-16">
                                     <i className={data.icon + " fa-fw"}></i>
@@ -45,7 +78,7 @@ class List extends Component {
                                 </span>
                             </a>
                         </div>
-                        <div className={(collapse ? 'd-none' : 'dropdown-group-list')}>
+                        <div className="dropdown-group-list">
                             <ul className="list-unstyled">
                                 {
                                     _.map(data.dropdownList, (menu, index) => {
@@ -62,7 +95,7 @@ class List extends Component {
         } else {
             return (
                 <div>
-                    <li className={data.bsClass}>
+                    <li className="no-dropdown">
                         <a href={data.link}>
                             <span className="p-x-16">
                                 <i className={data.icon + " fa-fw"}></i>
