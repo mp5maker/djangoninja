@@ -33,7 +33,9 @@ class List extends Component {
                 element.style.maxHeight = element.scrollHeight + "px"
             }
         } else {
-            this.state.collapsibleElement.style.maxHeight = null
+            if (this.state.collapsibleElement) {
+                this.state.collapsibleElement.style.maxHeight = null
+            }
         }
     }
 
@@ -96,13 +98,16 @@ class List extends Component {
                         className="dropdown-group">
                         <div
                             onClick={this.handleOnClickCollapse} 
-                            className={"dropdown-group-name " + (collapse ? "" : "active")}>
+                            className={"dropdown-group-category " + (collapse ? "" : "active")}>
                             <a>
-                                <span className="p-x-16">
+                                <span className="p-x-16 dropdown-group-icon">
                                     <i className={data.icon + " fa-fw"}></i>
                                 </span>
-                                <span>
+                                <span className="dropdown-group-name">
                                     {data.name}
+                                </span>
+                                <span className="dropdown-group-caret">
+                                    <i className="fa fa-caret-down"></i>
                                 </span>
                             </a>
                         </div>

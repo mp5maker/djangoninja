@@ -44,6 +44,26 @@ const menuList = [
                     },
                 ]
             },
+            {
+                "dropdown": true,
+                "id": "sidebar-info",
+                "name": "Design",
+                "icon": "fa fa-key",
+                "dropdownList": [
+                    {
+                        "dropdown": false,
+                        "name": "Lock",
+                        "link": "http://sphotonkhan.com/tech",
+                        "icon": "fa fa-user",
+                    },
+                    {
+                        "dropdown": false,
+                        "name": "Help",
+                        "link": "http://sphotonkhan.com/tech",
+                        "icon": "fa fa-plus",
+                    },
+                ]
+            },
         ]
     },
     {
@@ -70,7 +90,10 @@ const menuList = [
                 ]
             },
         ]
-    }
+    },
+    {
+        "category": "Documents",
+    },
 ]
 
 // Create Sidebar
@@ -104,7 +127,7 @@ class SidebarHeading extends Component {
                 <div className="sidebar-heading-container">
                     <a className="sidebar-brand">
                         <img src="/static/svg/logo.svg" alt="Omis Logo" className="sidebar-logo"></img>
-                        <span>OMIS</span>
+                        <span>Photon Kit</span>
                     </a>
                 </div>
             </div>
@@ -122,22 +145,24 @@ class SidebarContent extends Component {
         const { menuList } = this.props
         return (
             <div>
+                <div className="sidebar-content">
                 {
                     _.map(menuList, (category, index) => {
                         return (
                             <div key={index}>
                                 <div className="sidebar-header">
-                                    <span className="text-muted ">
-                                       {category.category}
+                                    <span className="text-muted">
+                                        {category.category}
                                     </span>
                                 </div>
-                                <ul className="sidebar-content list-unstyled">
+                                <ul className="sidebar-list-content list-unstyled">
                                     <SidebarLink category={category} key={index}/>
                                 </ul>
                             </div>
                         )
                     })
                 }
+                </div>
             </div>
         )
     }
