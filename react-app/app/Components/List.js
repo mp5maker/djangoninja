@@ -99,17 +99,15 @@ class List extends Component {
                         <div
                             onClick={this.handleOnClickCollapse} 
                             className={"dropdown-group-category " + (collapse ? "" : "active")}>
-                            <a>
-                                <span className="p-x-16 dropdown-group-icon">
-                                    <i className={data.icon + " fa-fw"}></i>
-                                </span>
-                                <span className="dropdown-group-name">
-                                    {data.name}
-                                </span>
-                                <span className="dropdown-group-caret">
-                                    <i className="fa fa-caret-down"></i>
-                                </span>
-                            </a>
+                            <span className="p-x-16 dropdown-group-icon">
+                                <i className={data.icon + " fa-fw"}></i>
+                            </span>
+                            <span className="dropdown-group-name">
+                                {data.name}
+                            </span>
+                            <span className="dropdown-group-caret">
+                                <i className="fa fa-caret-down"></i>
+                            </span>
                         </div>
                         <div className="dropdown-group-list">
                             <ul className="list-unstyled">

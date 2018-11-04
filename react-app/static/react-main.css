@@ -65755,13 +65755,27 @@ a.text-dark:hover, a.text-dark:focus {
 .width-1000 {
   width: 1000px; }
 
+* {
+  box-sizing: border-box; }
+
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow: hidden;
+  -ms-overflow-style: none; }
+  body ::-webkit-scrollbar, html ::-webkit-scrollbar {
+    display: none; }
 
 .pointer {
   cursor: pointer; }
+
+#sidebar, #main {
+  display: inline-block; }
+
+#sidebar {
+  position: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
 
 .sidebar-menu {
   width: 200px;
@@ -65822,10 +65836,13 @@ body, html {
         .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category:hover {
           cursor: pointer;
           background-color: #2b2d2f; }
-        .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret i {
-          transition-property: transform;
-          transition-duration: 0.25s;
-          transition-timing-function: ease-out; }
+        .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret {
+          margin-left: auto;
+          margin-right: 16px; }
+          .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret i {
+            transition-property: transform;
+            transition-duration: 0.25s;
+            transition-timing-function: ease-out; }
         .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category.active .dropdown-group-caret i {
           transition-property: transform;
           transition-duration: 0.25s;
@@ -65871,6 +65888,12 @@ body, html {
           margin-right: 6px; }
         .sidebar-menu .sidebar-footer div.sidebar-footer-profile span.sidebar-footer-profile-detail div.sidebar-footer-profile-status span {
           font-size: 80%; }
+
+#main {
+  background-color: white;
+  z-index: 1;
+  margin-left: 200px;
+  height: 100vh; }
 
 .alert {
   position: relative;
@@ -125541,13 +125564,27 @@ pre {
 .width-1000 {
   width: 1000px; }
 
+* {
+  box-sizing: border-box; }
+
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow: hidden;
+  -ms-overflow-style: none; }
+  body ::-webkit-scrollbar, html ::-webkit-scrollbar {
+    display: none; }
 
 .pointer {
   cursor: pointer; }
+
+#sidebar, #main {
+  display: inline-block; }
+
+#sidebar {
+  position: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
 
 .sidebar-menu {
   width: 200px;
@@ -125608,10 +125645,13 @@ body, html {
         .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category:hover {
           cursor: pointer;
           background-color: #2b2d2f; }
-        .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret i {
-          transition-property: transform;
-          transition-duration: 0.25s;
-          transition-timing-function: ease-out; }
+        .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret {
+          margin-left: auto;
+          margin-right: 16px; }
+          .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret i {
+            transition-property: transform;
+            transition-duration: 0.25s;
+            transition-timing-function: ease-out; }
         .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category.active .dropdown-group-caret i {
           transition-property: transform;
           transition-duration: 0.25s;
@@ -125657,6 +125697,12 @@ body, html {
           margin-right: 6px; }
         .sidebar-menu .sidebar-footer div.sidebar-footer-profile span.sidebar-footer-profile-detail div.sidebar-footer-profile-status span {
           font-size: 80%; }
+
+#main {
+  background-color: white;
+  z-index: 1;
+  margin-left: 200px;
+  height: 100vh; }
 
 .form-control {
   display: block;
@@ -130355,13 +130401,22 @@ a.text-dark:hover, a.text-dark:focus {
 .invisible {
   visibility: hidden !important; }
 
+* {
+  box-sizing: border-box; }
+
 body, html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow: hidden;
+  -ms-overflow-style: none; }
+  body ::-webkit-scrollbar, html ::-webkit-scrollbar {
+    display: none; }
 
 .pointer {
   cursor: pointer; }
+
+#sidebar, #main {
+  display: inline-block; }
 
 .m-t-0 {
   margin-top: 0px; }
@@ -188421,6 +188476,17 @@ body, html {
 .width-1000 {
   width: 1000px; }
 
+#main {
+  background-color: white;
+  z-index: 1;
+  margin-left: 200px;
+  height: 100vh; }
+
+#sidebar {
+  position: fixed;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+
 .sidebar-menu {
   width: 200px;
   height: 100vh;
@@ -188480,10 +188546,13 @@ body, html {
         .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category:hover {
           cursor: pointer;
           background-color: #2b2d2f; }
-        .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret i {
-          transition-property: transform;
-          transition-duration: 0.25s;
-          transition-timing-function: ease-out; }
+        .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret {
+          margin-left: auto;
+          margin-right: 16px; }
+          .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category .dropdown-group-caret i {
+            transition-property: transform;
+            transition-duration: 0.25s;
+            transition-timing-function: ease-out; }
         .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group div.dropdown-group-category.active .dropdown-group-caret i {
           transition-property: transform;
           transition-duration: 0.25s;

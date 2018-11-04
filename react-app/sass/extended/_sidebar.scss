@@ -1,4 +1,10 @@
 // Sidebar CSS
+#sidebar {
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
 .sidebar-menu {
     width: 200px;
     height: 100vh;
@@ -74,6 +80,8 @@
                         background-color: darken($light-theme-primary-color, 5%);
                     }
                     .dropdown-group-caret {
+                        margin-left: auto;
+                        margin-right: 16px;
                         i {
                             transition-property: transform;
                             transition-duration: 0.25s;

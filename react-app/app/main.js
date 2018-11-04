@@ -1,9 +1,9 @@
 import { render } from 'react-dom'
-import { Sidebar } from './Layouts/Sidebar'
+import { Dashboard } from './Pages/Dashboard'
 
 // Deploy the react app
 render(
-    <Sidebar />,
+    <Dashboard />,
     document.getElementById('react-app')
 )
 
