@@ -89,6 +89,132 @@ const menuList = [
                     },
                 ]
             },
+            {
+                "dropdown": false,
+                "name": "Home",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-home"
+            },
+            {
+                "dropdown": false,
+                "name": "About",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-user"
+            },
+            {
+                "dropdown": false,
+                "name": "Contact",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-chevron-up"
+            },
+            {
+                "dropdown": false,
+                "name": "Home",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-home"
+            },
+            {
+                "dropdown": false,
+                "name": "About",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-user"
+            },
+            {
+                "dropdown": false,
+                "name": "Contact",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-chevron-up"
+            },
+            {
+                "dropdown": false,
+                "name": "Home",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-home"
+            },
+            {
+                "dropdown": false,
+                "name": "About",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-user"
+            },
+            {
+                "dropdown": false,
+                "name": "Contact",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-chevron-up"
+            },
+            {
+                "dropdown": false,
+                "name": "Home",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-home"
+            },
+            {
+                "dropdown": false,
+                "name": "About",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-user"
+            },
+            {
+                "dropdown": false,
+                "name": "Contact",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-chevron-up"
+            },
+            {
+                "dropdown": false,
+                "name": "Home",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-home"
+            },
+            {
+                "dropdown": false,
+                "name": "About",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-user"
+            },
+            {
+                "dropdown": false,
+                "name": "Contact",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-chevron-up"
+            },
+            {
+                "dropdown": false,
+                "name": "Home",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-home"
+            },
+            {
+                "dropdown": false,
+                "name": "About",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-user"
+            },
+            {
+                "dropdown": false,
+                "name": "Contact",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-chevron-up"
+            },
+            {
+                "dropdown": false,
+                "name": "Home",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-home"
+            },
+            {
+                "dropdown": false,
+                "name": "About",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-user"
+            },
+            {
+                "dropdown": false,
+                "name": "Contact",
+                "link": "http://sphotonkhan.com/tech",
+                "icon": "fa fa-chevron-up"
+            },
         ]
     },
     {

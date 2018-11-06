@@ -65760,17 +65760,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 body, html {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  -ms-overflow-style: none; }
-  body ::-webkit-scrollbar, html ::-webkit-scrollbar {
-    display: none; }
+  padding: 0; }
 
 .pointer {
   cursor: pointer; }
 
-#sidebar, #main {
-  display: inline-block; }
+.sidebar-container {
+  padding-left: 0 !important; }
+
+.content-container {
+  padding-left: 7px !important; }
 
 #sidebar {
   position: fixed;
@@ -65778,19 +65777,20 @@ body, html {
   -webkit-overflow-scrolling: touch; }
 
 .sidebar-menu {
-  width: 200px;
+  width: 100%;
   height: 100vh;
   background-color: #373a3c;
   color: #e4e6e8; }
   .sidebar-menu .sidebar-heading {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 56px;
-    width: 200px;
-    background-color: #323537;
-    position: fixed;
-    top: 0;
-    left: 0; }
+    width: 100%;
+    background-color: #323537; }
     .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {
       padding-left: 16px; }
     .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand span {
@@ -65799,7 +65799,6 @@ body, html {
       margin-left: 10px;
       padding-right: 16px; }
   .sidebar-menu .sidebar-content {
-    margin-top: 56px;
     height: calc(100%);
     overflow-y: auto;
     background-color: #373a3c;
@@ -65807,7 +65806,7 @@ body, html {
     .sidebar-menu .sidebar-content .sidebar-header {
       display: flex;
       align-items: center;
-      width: 200px;
+      width: 100%;
       height: 36px;
       padding: 0 16px; }
       .sidebar-menu .sidebar-content .sidebar-header span.text-muted {
@@ -65869,7 +65868,7 @@ body, html {
     z-index: 1000; }
     .sidebar-menu .sidebar-footer div.sidebar-footer-profile {
       padding: 12px 16px;
-      width: 200px;
+      width: 100%;
       height: 64px;
       font-size: 90%;
       display: flex;
@@ -65891,9 +65890,8 @@ body, html {
 
 #main {
   background-color: white;
-  z-index: 1;
-  margin-left: 200px;
-  height: 100vh; }
+  height: 100vh;
+  color: black; }
 
 .alert {
   position: relative;
@@ -125569,17 +125567,16 @@ pre {
 
 body, html {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  -ms-overflow-style: none; }
-  body ::-webkit-scrollbar, html ::-webkit-scrollbar {
-    display: none; }
+  padding: 0; }
 
 .pointer {
   cursor: pointer; }
 
-#sidebar, #main {
-  display: inline-block; }
+.sidebar-container {
+  padding-left: 0 !important; }
+
+.content-container {
+  padding-left: 7px !important; }
 
 #sidebar {
   position: fixed;
@@ -125587,19 +125584,20 @@ body, html {
   -webkit-overflow-scrolling: touch; }
 
 .sidebar-menu {
-  width: 200px;
+  width: 100%;
   height: 100vh;
   background-color: #373a3c;
   color: #e4e6e8; }
   .sidebar-menu .sidebar-heading {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 56px;
-    width: 200px;
-    background-color: #323537;
-    position: fixed;
-    top: 0;
-    left: 0; }
+    width: 100%;
+    background-color: #323537; }
     .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {
       padding-left: 16px; }
     .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand span {
@@ -125608,7 +125606,6 @@ body, html {
       margin-left: 10px;
       padding-right: 16px; }
   .sidebar-menu .sidebar-content {
-    margin-top: 56px;
     height: calc(100%);
     overflow-y: auto;
     background-color: #373a3c;
@@ -125616,7 +125613,7 @@ body, html {
     .sidebar-menu .sidebar-content .sidebar-header {
       display: flex;
       align-items: center;
-      width: 200px;
+      width: 100%;
       height: 36px;
       padding: 0 16px; }
       .sidebar-menu .sidebar-content .sidebar-header span.text-muted {
@@ -125678,7 +125675,7 @@ body, html {
     z-index: 1000; }
     .sidebar-menu .sidebar-footer div.sidebar-footer-profile {
       padding: 12px 16px;
-      width: 200px;
+      width: 100%;
       height: 64px;
       font-size: 90%;
       display: flex;
@@ -125700,9 +125697,8 @@ body, html {
 
 #main {
   background-color: white;
-  z-index: 1;
-  margin-left: 200px;
-  height: 100vh; }
+  height: 100vh;
+  color: black; }
 
 .form-control {
   display: block;
@@ -130406,17 +130402,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 body, html {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  -ms-overflow-style: none; }
-  body ::-webkit-scrollbar, html ::-webkit-scrollbar {
-    display: none; }
+  padding: 0; }
 
 .pointer {
   cursor: pointer; }
 
-#sidebar, #main {
-  display: inline-block; }
+.sidebar-container {
+  padding-left: 0 !important; }
+
+.content-container {
+  padding-left: 7px !important; }
 
 .m-t-0 {
   margin-top: 0px; }
@@ -188478,9 +188473,8 @@ body, html {
 
 #main {
   background-color: white;
-  z-index: 1;
-  margin-left: 200px;
-  height: 100vh; }
+  height: 100vh;
+  color: black; }
 
 #sidebar {
   position: fixed;
@@ -188488,19 +188482,20 @@ body, html {
   -webkit-overflow-scrolling: touch; }
 
 .sidebar-menu {
-  width: 200px;
+  width: 100%;
   height: 100vh;
   background-color: #373a3c;
   color: #e4e6e8; }
   .sidebar-menu .sidebar-heading {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 56px;
-    width: 200px;
-    background-color: #323537;
-    position: fixed;
-    top: 0;
-    left: 0; }
+    width: 100%;
+    background-color: #323537; }
     .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {
       padding-left: 16px; }
     .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand span {
@@ -188509,7 +188504,6 @@ body, html {
       margin-left: 10px;
       padding-right: 16px; }
   .sidebar-menu .sidebar-content {
-    margin-top: 56px;
     height: calc(100%);
     overflow-y: auto;
     background-color: #373a3c;
@@ -188517,7 +188511,7 @@ body, html {
     .sidebar-menu .sidebar-content .sidebar-header {
       display: flex;
       align-items: center;
-      width: 200px;
+      width: 100%;
       height: 36px;
       padding: 0 16px; }
       .sidebar-menu .sidebar-content .sidebar-header span.text-muted {
@@ -188579,7 +188573,7 @@ body, html {
     z-index: 1000; }
     .sidebar-menu .sidebar-footer div.sidebar-footer-profile {
       padding: 12px 16px;
-      width: 200px;
+      width: 100%;
       height: 64px;
       font-size: 90%;
       display: flex;

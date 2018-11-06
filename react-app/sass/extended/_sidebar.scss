@@ -6,19 +6,20 @@
 }
 
 .sidebar-menu {
-    width: 200px;
+    width: 100%;
     height: 100vh;
     background-color: $light-theme-primary-color;
     color: $light-theme-secondary-color;
     .sidebar-heading {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 56px;
-        width: 200px;
+        width: 100%;
         background-color: darken($light-theme-primary-color, 2%);
-        position: fixed;
-        top: 0;
-        left: 0;
         .sidebar-heading-container {
             .sidebar-brand {
                 img.sidebar-logo {
@@ -34,7 +35,6 @@
         }
     }
     .sidebar-content {
-        margin-top: 56px;
         height: calc(100%);
         overflow-y: auto;
         background-color: $light-theme-primary-color;
@@ -42,7 +42,7 @@
         .sidebar-header {
             display: flex;
             align-items: center;
-            width: 200px;
+            width: 100%;
             height: 36px;
             padding: 0 16px;
             span.text-muted {
@@ -126,7 +126,7 @@
         z-index: 1000;
         div.sidebar-footer-profile {
             padding: 12px 16px;
-            width: 200px;
+            width: 100%;
             height: 64px;
             font-size: 90%;
             display: flex;

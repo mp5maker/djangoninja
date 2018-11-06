@@ -5,17 +5,16 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    -ms-overflow-style: none;
-    ::-webkit-scrollbar {
-        display: none;
-    }
 }
 
 .pointer {
     cursor: pointer;
 }
 
-#sidebar, #main {
-    display: inline-block;
+.sidebar-container {
+    padding-left: 0 !important;
+}
+
+.content-container {
+    padding-left: 7px !important;
 }
