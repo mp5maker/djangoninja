@@ -9,20 +9,16 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-1 sidebar-container">
-                            <div id="sidebar">
-                                <Sidebar />
-                            </div>
-                        </div>
-                        <div className="col-lg-11 content-container">
-                            <div id="main">
-                                Hello
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               <div className="wrapper">
+                   <nav id="sidebar">
+                       <div className="sidebar-menu">
+                            <Sidebar />
+                       </div>
+                   </nav>
+                   <div id="main">
+                       Hello
+                   </div>
+               </div>
             </div>
         )
     }

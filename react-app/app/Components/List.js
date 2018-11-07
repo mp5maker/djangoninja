@@ -10,7 +10,8 @@ class List extends Component {
         super(props)
         this.state = {
             collapse: true,
-            collapsibleElement: null
+            hoverable: true,
+            collapsibleElement: null,
         }
         this.handleOnClickCollapse = this.handleOnClickCollapse.bind(this)
         this.handleOnMouseEnterCollapse = this.handleOnMouseEnterCollapse.bind(this)
@@ -85,19 +86,28 @@ class List extends Component {
         }
     }
 
+    /**
+     * Set the hoverable or clicking for the sidebar
+     */
+    componentDidMount() {
+       this.setState({
+           hoverable : this.props.hoverable ? true : false 
+       })
+    }
+
     // Rendering the DOM
     render() {
         const { data } = this.props
-        const { collapse } = this.state
+        const { collapse, hoverable } = this.state
         if (data.dropdown) {
             return (
                 <div>
                     <li 
-                        onMouseEnter={this.handleOnMouseEnterCollapse}
-                        onMouseLeave={this.handleOnMouseLeaveCollapse} 
+                        onMouseEnter={hoverable ? this.handleOnMouseEnterCollapse : null}
+                        onMouseLeave={hoverable ? this.handleOnMouseLeaveCollapse : null} 
                         className="dropdown-group">
                         <div
-                            onClick={this.handleOnClickCollapse} 
+                            onClick={hoverable ? null : this.handleOnClickCollapse} 
                             className={"dropdown-group-category " + (collapse ? "" : "active")}>
                             <span className="p-x-16 dropdown-group-icon">
                                 <i className={data.icon + " fa-fw"}></i>

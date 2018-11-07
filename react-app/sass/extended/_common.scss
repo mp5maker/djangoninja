@@ -5,16 +5,15 @@
 body, html {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .pointer {
     cursor: pointer;
 }
 
-.sidebar-container {
-    padding-left: 0 !important;
-}
-
-.content-container {
-    padding-left: 7px !important;
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
 }

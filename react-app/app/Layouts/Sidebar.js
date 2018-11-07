@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import { List } from '../Components/List'
 
-// JSON format of the menu list
+// JSON format of the Menu List
 const menuList = [
     {
         "category": "Menu",
@@ -307,7 +307,7 @@ class SidebarLink extends Component {
                 {
                     _.map(category.list, (menu, index) => {
                         return (
-                            <List data={menu} key={index} />
+                            <List data={menu} key={index} hoverable={true} />
                         )
                     }) 
                 }
@@ -346,4 +346,4 @@ class SidebarFooter extends Component {
     }
 }
 
-export { menuList, Sidebar, SidebarHeading, SidebarContent, SidebarLink }
+export { menuList, Sidebar, SidebarHeading, SidebarContent, SidebarLink, SidebarFooter }
