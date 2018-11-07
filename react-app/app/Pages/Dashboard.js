@@ -10,7 +10,7 @@ class Dashboard extends Component {
         return (
             <div>
                <div className="wrapper">
-                   <nav id="sidebar">
+                   <nav id="sidebar" className="hide-laptop-down">
                        <div className="sidebar-menu">
                             <Sidebar />
                        </div>

@@ -1,0 +1,137 @@
+$screen-size: (four-k: 2560px, laptop-large: 1440px, laptop: 1025px, tablet: 768px, mobile-large: 425px, mobile-medium: 375px, mobile-small: 320px);
+
+// Returns Screen Size
+@function screen-size($type) {
+    @return map-get($screen-size, $type);
+}
+
+// Creates Screen
+@mixin create-screen($min-width, $max-width) {
+    @media only screen
+    and (min-width: $min-width)
+    and (max-width: $max-width) {
+        @content;
+    }
+}
+
+// Creates Min Screen
+@mixin create-min-screen($min-width) {
+    @media only screen
+    and (min-width: $min-width) {
+        @content;
+    }
+}
+
+// Creating Different Screen Sizes
+.mobile-small {
+    @include create-screen(0, screen-size(mobile-small)) {}
+}
+
+.mobile-medium-to-mobile-small {
+    @include create-screen(screen-size(mobile-small), screen-size(mobile-medium)) {}
+}
+
+.mobile-large-to-mobile-medium {
+    @include create-screen(screen-size(mobile-medium), screen-size(mobile-large)) {}
+}
+
+.tablet-to-mobile-large {
+    @include create-screen(screen-size(mobile-large), screen-size(tablet)) {}
+}
+
+.laptop-to-tablet {
+    @include create-screen(screen-size(tablet), screen-size(laptop)) {}
+}
+
+.laptop-large-to-laptop {
+    @include create-screen(screen-size(laptop), screen-size(laptop-large)) {}
+}
+
+.four-k-to-laptop-large {
+    @include create-screen(screen-size(laptop-large), screen-size(four-k)) {}
+}
+
+// Hide
+.hide-mobile-small-down {
+    @include create-screen(0, screen-size(mobile-small)) {
+         display: none;
+    }
+}
+
+.hide-mobile-medium-down {
+    @include create-screen(0, screen-size(mobile-medium)) {
+        display: none;
+    }
+}
+
+.hide-mobile-large-down {
+    @include create-screen(0, screen-size(mobile-large)) {
+        display: none;
+    }
+}
+
+.hide-tablet-down {
+    @include create-screen(0, screen-size(tablet)) {
+        display: none;
+    }
+}
+
+.hide-laptop-down {
+    @include create-screen(0, screen-size(laptop)) {
+        display: none;
+    }
+}
+
+.hide-laptop-large-down {
+    @include create-screen(0, screen-size(laptop-large)) {
+        display: none;
+    }
+}
+
+.hide-four-k-down {
+    @include create-screen(0, screen-size(four-k)) {
+        display: none;
+    }
+}
+
+.hide-mobile-small-up {
+    @include create-min-screen(screen-size(mobile-small)) {
+        display: none;
+    }
+}
+
+.hide-mobile-medium-up {
+    @include create-min-screen(screen-size(mobile-medium)) {
+        display: none;
+    }
+}
+
+.hide-mobile-large-up {
+    @include create-min-screen(screen-size(mobile-large)) {
+        display: none;
+    }
+}
+
+.hide-tablet-up {
+    @include create-min-screen(screen-size(tablet)) {
+        display: none;
+    }
+}
+
+.hide-laptop-up {
+    @include create-min-screen(screen-size(laptop)) {
+        display: none;
+    }
+}
+
+.hide-laptop-large-up {
+    @include create-min-screen(screen-size(laptop-large)) {
+        display: none;
+    }
+}
+
+.hide-four-k-up {
+    @include create-min-screen(screen-size(four-k)) {
+        display: none;
+    }
+}
