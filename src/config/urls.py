@@ -22,15 +22,9 @@ urlpatterns = [
     # Django Rest Framework
     url(r'^api/v1/', include('api.urls')),
     
-    # Raw Django
+    # Raw Django App
     url(r'^article/', include('articles.urls')),
     url(r'^accounts/', include('accounts.urls')),
-    
-    # Angular App
-    url(r'^angular-app/', angular, name="angular-app"),
-
-    # React App
-    url(r'^(?:.*)/?$', react, name="react-app"),
 ]  
 
 # Static Files
@@ -43,3 +37,9 @@ else:
 
 # Media Files
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# Angular App
+urlpatterns += url(r'^angular-app/', angular, name="angular-app"),
+
+# React App
+urlpatterns += url(r'^(?:.*)/?$', react, name="react-app"),
