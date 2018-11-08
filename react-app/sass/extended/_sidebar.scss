@@ -156,3 +156,23 @@
         }
     }
 }
+
+// Target Chrome, Safari
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #sidebar {
+        ::-webkit-scrollbar { 
+            display: none;
+        }
+    
+        .sidebar-menu {
+            .sidebar-content {
+                margin-right: 0px !important;
+            }
+        }
+    }
+}
+
+// Target Internet Explorer
+#sidebar {
+    -ms-overflow-style: none; 
+}

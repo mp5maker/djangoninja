@@ -1,9 +1,8 @@
 import { render } from 'react-dom'
-import { Dashboard } from './Pages/Dashboard'
+import { AdminPanel } from './Layouts/AdminPanel'
 
 // Deploy the react app
 render(
-    <Dashboard />,
+    <AdminPanel />,
     document.getElementById('react-app')
 )
-

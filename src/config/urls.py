@@ -30,7 +30,7 @@ urlpatterns = [
     url(r'^angular-app/', angular, name="angular-app"),
 
     # React App
-    url(r'^react-app/', react, name="react-app"),
+    url(r'^(?:.*)/?$', react, name="react-app"),
 ]  
 
 # Static Files
