@@ -65834,15 +65834,19 @@ body, html {
     border: none;
     font-size: 90%;
     padding-bottom: 5px;
-    border-bottom: 1px solid #9d1e1e; }
+    border-bottom: 1px solid #6c757d;
+    transition: all 0.25s ease-out; }
     .group input:focus {
-      outline: none; }
-      .group input:focus ~ label {
-        top: -15px;
-        font-size: 70%;
-        transition: all 0.1s ease-out;
-        color: #006767; }
+      outline: none;
+      transition: all 0.25s ease-out;
+      border-bottom: 1px solid #006767; }
+    .group input:focus ~ label, .group input:valid ~ label {
+      top: -20px;
+      font-size: 50%;
+      transition: all 0.1s ease-out;
+      color: #006767; }
   .group label {
+    font-size: 90%;
     position: absolute;
     top: 0px;
     transition: all 0.1s ease-out; }
@@ -125732,15 +125736,19 @@ body, html {
     border: none;
     font-size: 90%;
     padding-bottom: 5px;
-    border-bottom: 1px solid #9d1e1e; }
+    border-bottom: 1px solid #6c757d;
+    transition: all 0.25s ease-out; }
     .group input:focus {
-      outline: none; }
-      .group input:focus ~ label {
-        top: -15px;
-        font-size: 70%;
-        transition: all 0.1s ease-out;
-        color: #006767; }
+      outline: none;
+      transition: all 0.25s ease-out;
+      border-bottom: 1px solid #006767; }
+    .group input:focus ~ label, .group input:valid ~ label {
+      top: -20px;
+      font-size: 50%;
+      transition: all 0.1s ease-out;
+      color: #006767; }
   .group label {
+    font-size: 90%;
     position: absolute;
     top: 0px;
     transition: all 0.1s ease-out; }
@@ -130602,15 +130610,19 @@ body, html {
     border: none;
     font-size: 90%;
     padding-bottom: 5px;
-    border-bottom: 1px solid #9d1e1e; }
+    border-bottom: 1px solid #6c757d;
+    transition: all 0.25s ease-out; }
     .group input:focus {
-      outline: none; }
-      .group input:focus ~ label {
-        top: -15px;
-        font-size: 70%;
-        transition: all 0.1s ease-out;
-        color: #006767; }
+      outline: none;
+      transition: all 0.25s ease-out;
+      border-bottom: 1px solid #006767; }
+    .group input:focus ~ label, .group input:valid ~ label {
+      top: -20px;
+      font-size: 50%;
+      transition: all 0.1s ease-out;
+      color: #006767; }
   .group label {
+    font-size: 90%;
     position: absolute;
     top: 0px;
     transition: all 0.1s ease-out; }

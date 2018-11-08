@@ -17,7 +17,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="mx-auto mr-auto">
                             <div className="group">
-                                <input type="text"/>
+                                <input type="text" required/>
                                 <span className="highlight"/>
                                 <span className="bar"/>
                                 <label>Name</label>

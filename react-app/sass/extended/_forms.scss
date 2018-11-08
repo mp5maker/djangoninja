@@ -5,18 +5,22 @@
        border: none;
        font-size: 90%;
        padding-bottom: 5px;
-       border-bottom: 1px solid $light-theme-danger-color;
+       border-bottom: 1px solid $light-theme-muted-color;
+       transition: all 0.25s ease-out;
        &:focus {
            outline: none;
-           & ~ label {
-               top: -15px;
-               font-size: 70%;
-               transition: all 0.1s ease-out;
-               color: $light-theme-success-color;
-           }
+           transition: all 0.25s ease-out;
+           border-bottom: 1px solid $light-theme-success-color;
+       }
+       &:focus ~ label, &:valid ~ label {
+            top: -20px;
+            font-size: 50%;
+            transition: all 0.1s ease-out;
+            color: $light-theme-success-color;
        }
    }
    label {
+        font-size: 90%;
         position: absolute;
         top: 0px;
         transition: all 0.1s ease-out;
