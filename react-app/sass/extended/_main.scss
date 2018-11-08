@@ -4,4 +4,12 @@
     height: 100vh;
     color: $black;
     z-index: 9999;
+    .navbar {
+        background-color: $white;
+        min-height: 56px;
+        border-bottom: 1px solid $light-theme-border;
+        h5 {
+            font-weight: 500;
+        }
+    }
 }

@@ -9,7 +9,24 @@ class Dashboard extends Component {
         return (
             <div>
                 <div>
-                    Hello
+                    <nav className="navbar">
+                        <div>
+                            <span>
+                                <h5>Dashboard</h5>
+                            </span>
+                        </div>
+                        <div className="mx-auto mr-auto">
+                            <div className="group">
+                                <input type="text"/>
+                                <span className="highlight"/>
+                                <span className="bar"/>
+                                <label>Name</label>
+                            </div>
+                        </div>
+                        <div>
+                            Right
+                        </div>
+                    </nav>
                 </div>
             </div>
         )

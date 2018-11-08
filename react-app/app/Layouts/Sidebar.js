@@ -4,13 +4,13 @@ import { List } from '../Components/List'
 // JSON format of the Menu List
 const menuList = [
     {
-        "category": "Menu",
+        "category": "Main",
         "list": [
             {
                 "dropdown": false,
-                "name": "Home",
-                "link": "http://sphotonkhan.com/tech",
-                "icon": "fa fa-home"
+                "name": "Dashboard",
+                "link": "/",
+                "icon": "fa fa-dashboard"
             },
             {
                 "dropdown": false,

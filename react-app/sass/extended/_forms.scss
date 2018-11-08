@@ -1,0 +1,24 @@
+.group {
+    position: relative;
+    input {
+       display: block;
+       border: none;
+       font-size: 90%;
+       padding-bottom: 5px;
+       border-bottom: 1px solid $light-theme-danger-color;
+       &:focus {
+           outline: none;
+           & ~ label {
+               top: -15px;
+               font-size: 70%;
+               transition: all 0.1s ease-out;
+               color: $light-theme-success-color;
+           }
+       }
+   }
+   label {
+        position: absolute;
+        top: 0px;
+        transition: all 0.1s ease-out;
+   }
+}
