@@ -65828,13 +65828,15 @@ body, html {
   align-items: stretch; }
 
 .group {
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .group input {
     display: block;
+    width: 100%;
     border: none;
     font-size: 90%;
     padding-bottom: 5px;
-    border-bottom: 1px solid #6c757d;
+    border-bottom: 1px solid #eff0f1;
     transition: all 0.25s ease-out; }
     .group input:focus {
       outline: none;
@@ -65845,11 +65847,15 @@ body, html {
       font-size: 50%;
       transition: all 0.1s ease-out;
       color: #006767; }
+      .group input:focus ~ label span.icon, .group input:valid ~ label span.icon {
+        display: none; }
   .group label {
     font-size: 90%;
     position: absolute;
     top: 0px;
     transition: all 0.1s ease-out; }
+    .group label span.icon {
+      margin-right: 6px; }
 
 #sidebar {
   min-width: 200px;
@@ -65863,7 +65869,7 @@ body, html {
     top: 0;
     display: flex;
     align-items: center;
-    height: 56px;
+    height: 64px;
     width: 100%;
     background-color: #323537; }
     #sidebar .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {
@@ -125730,13 +125736,15 @@ body, html {
   align-items: stretch; }
 
 .group {
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .group input {
     display: block;
+    width: 100%;
     border: none;
     font-size: 90%;
     padding-bottom: 5px;
-    border-bottom: 1px solid #6c757d;
+    border-bottom: 1px solid #eff0f1;
     transition: all 0.25s ease-out; }
     .group input:focus {
       outline: none;
@@ -125747,11 +125755,15 @@ body, html {
       font-size: 50%;
       transition: all 0.1s ease-out;
       color: #006767; }
+      .group input:focus ~ label span.icon, .group input:valid ~ label span.icon {
+        display: none; }
   .group label {
     font-size: 90%;
     position: absolute;
     top: 0px;
     transition: all 0.1s ease-out; }
+    .group label span.icon {
+      margin-right: 6px; }
 
 #sidebar {
   min-width: 200px;
@@ -125765,7 +125777,7 @@ body, html {
     top: 0;
     display: flex;
     align-items: center;
-    height: 56px;
+    height: 64px;
     width: 100%;
     background-color: #323537; }
     #sidebar .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {
@@ -130602,30 +130614,6 @@ body, html {
   display: flex;
   width: 100%;
   align-items: stretch; }
-
-.group {
-  position: relative; }
-  .group input {
-    display: block;
-    border: none;
-    font-size: 90%;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #6c757d;
-    transition: all 0.25s ease-out; }
-    .group input:focus {
-      outline: none;
-      transition: all 0.25s ease-out;
-      border-bottom: 1px solid #006767; }
-    .group input:focus ~ label, .group input:valid ~ label {
-      top: -20px;
-      font-size: 50%;
-      transition: all 0.1s ease-out;
-      color: #006767; }
-  .group label {
-    font-size: 90%;
-    position: absolute;
-    top: 0px;
-    transition: all 0.1s ease-out; }
 
 .m-t-0 {
   margin-top: 0px; }
@@ -188685,6 +188673,36 @@ body, html {
 .width-1000 {
   width: 1000px; }
 
+.group {
+  position: relative;
+  width: 100%; }
+  .group input {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 90%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eff0f1;
+    transition: all 0.25s ease-out; }
+    .group input:focus {
+      outline: none;
+      transition: all 0.25s ease-out;
+      border-bottom: 1px solid #006767; }
+    .group input:focus ~ label, .group input:valid ~ label {
+      top: -20px;
+      font-size: 50%;
+      transition: all 0.1s ease-out;
+      color: #006767; }
+      .group input:focus ~ label span.icon, .group input:valid ~ label span.icon {
+        display: none; }
+  .group label {
+    font-size: 90%;
+    position: absolute;
+    top: 0px;
+    transition: all 0.1s ease-out; }
+    .group label span.icon {
+      margin-right: 6px; }
+
 #main {
   width: 100%;
   background-color: white;
@@ -188766,7 +188784,7 @@ body, html {
     top: 0;
     display: flex;
     align-items: center;
-    height: 56px;
+    height: 64px;
     width: 100%;
     background-color: #323537; }
     #sidebar .sidebar-menu .sidebar-heading .sidebar-heading-container .sidebar-brand img.sidebar-logo {

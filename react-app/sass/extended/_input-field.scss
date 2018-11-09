@@ -1,0 +1,37 @@
+// InputField
+.group {
+    position: relative;
+    width: 100%;
+    input {
+        display: block;
+        width: 100%;
+        border: none;
+        font-size: 90%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $light-theme-border;
+        transition: all 0.25s ease-out;
+        &:focus {
+            outline: none;
+            transition: all 0.25s ease-out;
+            border-bottom: 1px solid $light-theme-success-color;
+        }
+        &:focus ~ label, &:valid ~ label {
+                top: -20px;
+                font-size: 50%;
+                transition: all 0.1s ease-out;
+                color: $light-theme-success-color;
+                span.icon {
+                    display: none;
+                }
+        }
+   }
+   label {
+        font-size: 90%;
+        position: absolute;
+        top: 0px;
+        transition: all 0.1s ease-out;
+        span.icon {
+            margin-right: 6px;
+        }
+    }
+}

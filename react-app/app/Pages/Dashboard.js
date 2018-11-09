@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { Navbar } from '../Layouts/Navbar'
 
 class Dashboard extends Component {
     constructor(props) {
@@ -8,26 +9,7 @@ class Dashboard extends Component {
     render() {
         return (
             <div>
-                <div>
-                    <nav className="navbar">
-                        <div>
-                            <span>
-                                <h5>Dashboard</h5>
-                            </span>
-                        </div>
-                        <div className="mx-auto mr-auto">
-                            <div className="group">
-                                <input type="text" required/>
-                                <span className="highlight"/>
-                                <span className="bar"/>
-                                <label>Name</label>
-                            </div>
-                        </div>
-                        <div>
-                            Right
-                        </div>
-                    </nav>
-                </div>
+                <Navbar />
             </div>
         )
     }
