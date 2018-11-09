@@ -1,5 +1,6 @@
 import { Component } from 'react'
 import { List } from '../Components/List'
+import { DynamicLinks } from '../Routes/Routes' 
 
 // JSON format of the Menu List
 const menuList = [
@@ -9,19 +10,19 @@ const menuList = [
             {
                 "dropdown": false,
                 "name": "Dashboard",
-                "link": "/",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-dashboard"
             },
             {
                 "dropdown": false,
-                "name": "About",
-                "link": "http://sphotonkhan.com/tech",
-                "icon": "fa fa-user"
+                "name": "Prescription",
+                "link": DynamicLinks.prescription,
+                "icon": "fa fa-stethoscope"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-chevron-up"
             },
             {
@@ -33,13 +34,13 @@ const menuList = [
                     {
                         "dropdown": false,
                         "name": "Paramedics",
-                        "link": "http://sphotonkhan.com/tech",
+                        "link": DynamicLinks.dashboard,
                         "icon": "fa fa-chevron-left",
                     },
                     {
                         "dropdown": false,
                         "name": "Help",
-                        "link": "http://sphotonkhan.com/tech",
+                        "link": DynamicLinks.dashboard,
                         "icon": "fa fa-chevron-right",
                     },
                 ]
@@ -53,13 +54,13 @@ const menuList = [
                     {
                         "dropdown": false,
                         "name": "Lock",
-                        "link": "http://sphotonkhan.com/tech",
+                        "link": DynamicLinks.dashboard,
                         "icon": "fa fa-user",
                     },
                     {
                         "dropdown": false,
                         "name": "Help",
-                        "link": "http://sphotonkhan.com/tech",
+                        "link": DynamicLinks.dashboard,
                         "icon": "fa fa-plus",
                     },
                 ]
@@ -78,13 +79,13 @@ const menuList = [
                     {
                         "dropdown": false,
                         "name": "Paramedics",
-                        "link": "http://sphotonkhan.com/tech",
+                        "link": DynamicLinks.dashboard,
                         "icon": "fa fa-chevron-left",
                     },
                     {
                         "dropdown": false,
                         "name": "Help",
-                        "link": "http://sphotonkhan.com/tech",
+                        "link": DynamicLinks.dashboard,
                         "icon": "fa fa-chevron-right",
                     },
                 ]
@@ -92,127 +93,127 @@ const menuList = [
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": "http://sphotonkhan.com/tech",
+                "link": DynamicLinks.dashboard,
                 "icon": "fa fa-chevron-up"
             },
         ]

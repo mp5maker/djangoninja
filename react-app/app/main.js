@@ -1,8 +1,8 @@
 import { render } from 'react-dom'
-import { AdminPanel } from './Layouts/AdminPanel'
+import { App } from './App/App'
 
 // Deploy the react app
 render(
-    <AdminPanel />,
+    <App />,
     document.getElementById('react-app')
 )

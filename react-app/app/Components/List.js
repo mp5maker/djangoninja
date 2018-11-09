@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 /**
  * @ Creates List
@@ -137,14 +138,14 @@ class List extends Component {
             return (
                 <div>
                     <li className="no-dropdown">
-                        <a href={data.link}>
+                        <NavLink to={data.link}>
                             <span className="p-x-16">
                                 <i className={data.icon + " fa-fw"}></i>
                             </span>
                             <span>
                                 {data.name}
                             </span>
-                        </a>
+                        </NavLink>
                     </li> 
                 </div>
             )

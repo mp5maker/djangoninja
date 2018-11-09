@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import { Navbar } from '../Layouts/Navbar'
 
-class Dashboard extends Component {
+class Prescription extends Component {
     constructor(props) {
         super(props)
     }
@@ -11,11 +11,11 @@ class Dashboard extends Component {
             <div>
                 <Navbar />
                 <div>
-                    Dashboard
+                    Prescription
                 </div>
             </div>
         )
     }
 }
 
-export { Dashboard }
+export { Prescription }
