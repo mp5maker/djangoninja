@@ -8,6 +8,7 @@
         border: none;
         font-size: 90%;
         padding-bottom: 5px;
+        color: $light-theme-primary-color;
         border-bottom: 1px solid $light-theme-border;
         transition: all 0.25s ease-out;
         &:focus {
@@ -28,7 +29,7 @@
    label {
         font-size: 90%;
         position: absolute;
-        top: 0px;
+        top: 0;
         transition: all 0.1s ease-out;
         span.icon {
             margin-right: 6px;

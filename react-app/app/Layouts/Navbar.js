@@ -10,16 +10,13 @@ class Navbar extends Component {
         return (
             <div>
                 <nav className="navbar">
-                    <div>
-                        <span>
-                            <h5>Dashboard</h5>
-                        </span>
-                    </div>
-                    <div className="mx-auto mr-auto">
+                    <div className="mr-auto left-section">
                         <InputField />
                     </div>
-                    <div>
-                        Right
+                    <div className="right-section">
+                        <span>
+                            <img src="/media/javascript.jpg" alt="sidebar-footer-user-photo"/>
+                        </span>
                     </div>
                 </nav>
             </div>

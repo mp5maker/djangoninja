@@ -8,8 +8,23 @@
         background-color: $white;
         min-height: 56px;
         border-bottom: 1px solid $light-theme-border;
-        h5 {
-            font-weight: 500;
+        .left-section {
+            width: 96%;
+            .group {
+                margin-top: 12px;
+            }
+        }
+        .right-section {
+            text-align: right;
+            width: 4%;
+            span {
+                margin-top: 12px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
         }
     }
 }

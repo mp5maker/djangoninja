@@ -65836,6 +65836,7 @@ body, html {
     border: none;
     font-size: 90%;
     padding-bottom: 5px;
+    color: #373a3c;
     border-bottom: 1px solid #eff0f1;
     transition: all 0.25s ease-out; }
     .group input:focus {
@@ -65852,7 +65853,7 @@ body, html {
   .group label {
     font-size: 90%;
     position: absolute;
-    top: 0px;
+    top: 0;
     transition: all 0.1s ease-out; }
     .group label span.icon {
       margin-right: 6px; }
@@ -65991,8 +65992,19 @@ body, html {
     background-color: white;
     min-height: 56px;
     border-bottom: 1px solid #eff0f1; }
-    #main .navbar h5 {
-      font-weight: 500; }
+    #main .navbar .left-section {
+      width: 96%; }
+      #main .navbar .left-section .group {
+        margin-top: 12px; }
+    #main .navbar .right-section {
+      text-align: right;
+      width: 4%; }
+      #main .navbar .right-section span {
+        margin-top: 12px; }
+        #main .navbar .right-section span img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%; }
 
 .alert {
   position: relative;
@@ -125744,6 +125756,7 @@ body, html {
     border: none;
     font-size: 90%;
     padding-bottom: 5px;
+    color: #373a3c;
     border-bottom: 1px solid #eff0f1;
     transition: all 0.25s ease-out; }
     .group input:focus {
@@ -125760,7 +125773,7 @@ body, html {
   .group label {
     font-size: 90%;
     position: absolute;
-    top: 0px;
+    top: 0;
     transition: all 0.1s ease-out; }
     .group label span.icon {
       margin-right: 6px; }
@@ -125899,8 +125912,19 @@ body, html {
     background-color: white;
     min-height: 56px;
     border-bottom: 1px solid #eff0f1; }
-    #main .navbar h5 {
-      font-weight: 500; }
+    #main .navbar .left-section {
+      width: 96%; }
+      #main .navbar .left-section .group {
+        margin-top: 12px; }
+    #main .navbar .right-section {
+      text-align: right;
+      width: 4%; }
+      #main .navbar .right-section span {
+        margin-top: 12px; }
+        #main .navbar .right-section span img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%; }
 
 .form-control {
   display: block;
@@ -188682,6 +188706,7 @@ body, html {
     border: none;
     font-size: 90%;
     padding-bottom: 5px;
+    color: #373a3c;
     border-bottom: 1px solid #eff0f1;
     transition: all 0.25s ease-out; }
     .group input:focus {
@@ -188698,7 +188723,7 @@ body, html {
   .group label {
     font-size: 90%;
     position: absolute;
-    top: 0px;
+    top: 0;
     transition: all 0.1s ease-out; }
     .group label span.icon {
       margin-right: 6px; }
@@ -188713,8 +188738,19 @@ body, html {
     background-color: white;
     min-height: 56px;
     border-bottom: 1px solid #eff0f1; }
-    #main .navbar h5 {
-      font-weight: 500; }
+    #main .navbar .left-section {
+      width: 96%; }
+      #main .navbar .left-section .group {
+        margin-top: 12px; }
+    #main .navbar .right-section {
+      text-align: right;
+      width: 4%; }
+      #main .navbar .right-section span {
+        margin-top: 12px; }
+        #main .navbar .right-section span img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%; }
 
 @media only screen and (min-width: 0) and (max-width: 320px) {
   .hide-mobile-small-down {
