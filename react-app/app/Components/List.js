@@ -24,7 +24,8 @@ class List extends Component {
      * @param {object} event 
      */
     toggleHideShow(event) {
-        const element = event.target.nextElementSibling;
+        // Hover will expand/collapse | Click will expand/collapse
+        const element = event.target.nextElementSibling
         if (element) {
             this.setState({
                 collapsibleElement: element
@@ -91,9 +92,23 @@ class List extends Component {
      * Set the hoverable or clicking for the sidebar
      */
     componentDidMount() {
-       this.setState({
-           hoverable : this.props.hoverable ? true : false 
-       })
+        this.setState({
+            hoverable : this.props.hoverable ? true : false 
+        })
+
+        // Auto Expand for the active element
+        const activeElement = document.querySelector(".dropdown-group-list a.active")
+        if (activeElement) {
+            const parentSibling = activeElement.parentElement.parentElement.parentElement.parentElement
+            parentSibling.style.maxHeight = parentSibling.scrollHeight + "px"
+            const caret = parentSibling.previousSibling.lastChild
+            if (this.props.hoverable) {
+                parentSibling.previousSibling.classList.add('active')
+                caret.style.transform = "rotate(0deg)"                 
+            } else {
+                caret.style.transform = "rotate(180deg)" 
+            }
+        } 
     }
 
     // Rendering the DOM

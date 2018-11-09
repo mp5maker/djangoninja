@@ -22,8 +22,9 @@ class App extends Component {
                         </nav>
                         <div id="main">
                             <Switch>
-                                <Route exact path={DynamicLinks.dashboard} component={ Dashboard } />
-                                <Route path={DynamicLinks.prescription} component={ Prescription } />
+                                <Route exact path={ DynamicLinks.root } component={ Dashboard } />
+                                <Route path={ DynamicLinks.dashboard } component={ Dashboard } />
+                                <Route path={ DynamicLinks.prescription } component={ Prescription } />
                             </Switch>
                         </div>
                     </div>

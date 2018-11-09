@@ -1,5 +1,6 @@
 const DynamicLinks = {
-    "dashboard": "/",
+    "root": "/",
+    "dashboard": "/dashboard",
     "prescription": "/prescription",
 }
 

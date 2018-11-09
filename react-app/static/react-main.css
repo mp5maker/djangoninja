@@ -65907,6 +65907,8 @@ body, html {
       height: 36px; }
       #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.no-dropdown a:hover {
         background-color: #2b2d2f; }
+      #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.no-dropdown a.active {
+        background-color: #1f2021; }
     #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group {
       font-size: 90%;
       font-weight: 400; }
@@ -65990,7 +65992,7 @@ body, html {
   z-index: 9999; }
   #main .navbar {
     background-color: white;
-    min-height: 56px;
+    min-height: 64px;
     border-bottom: 1px solid #eff0f1; }
     #main .navbar .left-section {
       width: 96%; }
@@ -125827,6 +125829,8 @@ body, html {
       height: 36px; }
       #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.no-dropdown a:hover {
         background-color: #2b2d2f; }
+      #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.no-dropdown a.active {
+        background-color: #1f2021; }
     #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group {
       font-size: 90%;
       font-weight: 400; }
@@ -125910,7 +125914,7 @@ body, html {
   z-index: 9999; }
   #main .navbar {
     background-color: white;
-    min-height: 56px;
+    min-height: 64px;
     border-bottom: 1px solid #eff0f1; }
     #main .navbar .left-section {
       width: 96%; }
@@ -188736,7 +188740,7 @@ body, html {
   z-index: 9999; }
   #main .navbar {
     background-color: white;
-    min-height: 56px;
+    min-height: 64px;
     border-bottom: 1px solid #eff0f1; }
     #main .navbar .left-section {
       width: 96%; }
@@ -188857,6 +188861,8 @@ body, html {
       height: 36px; }
       #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.no-dropdown a:hover {
         background-color: #2b2d2f; }
+      #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.no-dropdown a.active {
+        background-color: #1f2021; }
     #sidebar .sidebar-menu .sidebar-content .sidebar-list-content li.dropdown-group {
       font-size: 90%;
       font-weight: 400; }

@@ -15,15 +15,15 @@ const menuList = [
             },
             {
                 "dropdown": false,
-                "name": "Prescription",
-                "link": DynamicLinks.prescription,
-                "icon": "fa fa-stethoscope"
+                "name": "Paramedics",
+                "link": "http://sphotonkhan.com",
+                "icon": "fa fa-heartbeat",
             },
             {
                 "dropdown": false,
-                "name": "Contact",
-                "link": DynamicLinks.dashboard,
-                "icon": "fa fa-chevron-up"
+                "name": "Ambulance",
+                "link": "http://sphotonkhan.com",
+                "icon": "fa fa-ambulance"
             },
             {
                 "dropdown": true,
@@ -33,15 +33,15 @@ const menuList = [
                 "dropdownList": [
                     {
                         "dropdown": false,
-                        "name": "Paramedics",
-                        "link": DynamicLinks.dashboard,
-                        "icon": "fa fa-chevron-left",
+                        "name": "Prescription",
+                        "link": DynamicLinks.prescription,
+                        "icon": "fa fa-stethoscope"
                     },
                     {
                         "dropdown": false,
-                        "name": "Help",
-                        "link": DynamicLinks.dashboard,
-                        "icon": "fa fa-chevron-right",
+                        "name": "Hospital",
+                        "link": "http://sphotonkhan.com",
+                        "icon": "fa fa-hospital-o",
                     },
                 ]
             },
@@ -53,15 +53,15 @@ const menuList = [
                 "dropdownList": [
                     {
                         "dropdown": false,
-                        "name": "Lock",
-                        "link": DynamicLinks.dashboard,
-                        "icon": "fa fa-user",
+                        "name": "Medical Kit",
+                        "link": "http://sphotonkhan.com",
+                        "icon": "fa fa-medkit",
                     },
                     {
                         "dropdown": false,
-                        "name": "Help",
-                        "link": DynamicLinks.dashboard,
-                        "icon": "fa fa-plus",
+                        "name": "Wheel Chair",
+                        "link": "http://sphotonkhan.com",
+                        "icon": "fa fa-wheelchair",
                     },
                 ]
             },
@@ -78,14 +78,14 @@ const menuList = [
                 "dropdownList": [
                     {
                         "dropdown": false,
-                        "name": "Paramedics",
-                        "link": DynamicLinks.dashboard,
-                        "icon": "fa fa-chevron-left",
+                        "name": "Pathologist",
+                        "link": "http://sphotonkhan.com",
+                        "icon": "fa fa-user-md",
                     },
                     {
                         "dropdown": false,
                         "name": "Help",
-                        "link": DynamicLinks.dashboard,
+                        "link": "http://sphotonkhan.com",
                         "icon": "fa fa-chevron-right",
                     },
                 ]
@@ -93,127 +93,127 @@ const menuList = [
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-chevron-up"
             },
             {
                 "dropdown": false,
                 "name": "Home",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-home"
             },
             {
                 "dropdown": false,
                 "name": "About",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-user"
             },
             {
                 "dropdown": false,
                 "name": "Contact",
-                "link": DynamicLinks.dashboard,
+                "link": "http://sphotonkhan.com",
                 "icon": "fa fa-chevron-up"
             },
         ]
