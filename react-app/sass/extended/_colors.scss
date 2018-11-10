@@ -1,0 +1,44 @@
+/////////////////// Common Colors ////////////////////////////////
+
+$white: #f8f8f8;
+$black: #2a2b3c;
+$grey: #424242;
+$light-grey: #e4e4e4;
+$violet: #a88add;
+$blue: #6887ff;
+$green: #28a745;
+$pink: #f77a99;
+$box-shadow-color: rgba(0,0,0,.26);
+
+/////////////////// Light Theme Colors ////////////////////////////
+
+// Common Colors
+$light-theme-primary-color: #373a3c;
+$light-theme-secondary-color: #e4e6e8;
+$light-theme-danger-color: darken(#f44455, 5%);
+$light-theme-success-color: darken(teal, 5%);
+$light-theme-warning-color: #fcc100;
+
+$light-theme-info-color: #2196f3;
+$light-theme-muted-color: #6c757d;
+
+// Shades of Light Theme Colors
+$light-theme-border: lighten($light-theme-muted-color, 48.5%);
+
+/////////////////// Dark Theme Colors ////////////////////////////
+
+// Common Colors
+$dark-theme-primary-color: #263441;
+$dark-theme-secondary-color: darken(#e4e6e8, 10%);
+$dark-theme-danger-color:#f44455;
+$dark-theme-success-color: #0cc2aa;
+$dark-theme-warning-color: #fcc100;
+$dark-theme-info-color: #2196f3;
+$dark-theme-muted-color: #6c757d;
+
+// Background Colors
+$dark-theme-background-color: #354759;
+
+// Shades of Dark Theme Colors
+$dark-theme-border: darken($dark-theme-secondary-color, 48.5%);
+$dark-theme-lighten-border: darken($dark-theme-secondary-color, 25%);

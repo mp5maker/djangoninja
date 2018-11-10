@@ -8,6 +8,15 @@
         background-color: $white;
         min-height: 64px;
         border-bottom: 1px solid $light-theme-border;
+        transition-property: box-shadow;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-out;
+        &:hover {
+            transition-property: box-shadow;
+            transition-duration: 0.25s;
+            transition-timing-function: ease-out;
+            box-shadow: 0 0.25px 0.5px 0 $box-shadow-color;
+        }
         .left-section {
             width: 96%;
             .group {
@@ -15,14 +24,66 @@
             }
         }
         .right-section {
+            position: relative;
             text-align: right;
             width: 4%;
             span {
                 margin-top: 12px;
+                &:hover {
+                    img, .circle {
+                        box-shadow: 0 2px 5px 0 $box-shadow-color;
+                    }
+                }
                 img {
                     width: 40px;
                     height: 40px;
                     border-radius: 50%;
+                }
+                .circle {
+                    position: absolute;
+                    top: 16px;
+                    right: 0;
+                    width: 10px;
+                    height: 10px;
+                    background-color: $green;
+                    border-radius: 50%;
+                }
+            }
+            div {
+                position: relative;
+                width: 160px;
+                ul {
+                    background-color: $white;
+                    position: absolute;
+                    right: 92px;
+                    top: 16px;
+                    z-index: 1000;
+                    padding: 0;
+                    list-style: none !important;
+                    text-decoration: none !important;
+                    box-shadow: 0 0.25px 0.5px 0 $box-shadow-color;
+                    li.no-dropdown {
+                        a {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            font-size: 90%;
+                            font-weight: 400;
+                            color: $black !important;
+                            text-decoration: none !important;
+                            width: 100% !important;
+                            min-height: 27px;
+                            &:hover {
+                                background-color: $light-grey;
+                            }
+                            span {
+                                margin-top: 0;
+                                &.p-x-16 {
+                                    padding: 0 5px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

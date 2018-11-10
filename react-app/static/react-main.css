@@ -66025,20 +66025,68 @@ body, html {
   #main .navbar {
     background-color: #f8f8f8;
     min-height: 64px;
-    border-bottom: 1px solid #eff0f1; }
+    border-bottom: 1px solid #eff0f1;
+    transition-property: box-shadow;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out; }
+    #main .navbar:hover {
+      transition-property: box-shadow;
+      transition-duration: 0.25s;
+      transition-timing-function: ease-out;
+      box-shadow: 0 0.25px 0.5px 0 rgba(0, 0, 0, 0.26); }
     #main .navbar .left-section {
       width: 96%; }
       #main .navbar .left-section .group {
         margin-top: 12px; }
     #main .navbar .right-section {
+      position: relative;
       text-align: right;
       width: 4%; }
       #main .navbar .right-section span {
         margin-top: 12px; }
+        #main .navbar .right-section span:hover img, #main .navbar .right-section span:hover .circle {
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
         #main .navbar .right-section span img {
           width: 40px;
           height: 40px;
           border-radius: 50%; }
+        #main .navbar .right-section span .circle {
+          position: absolute;
+          top: 16px;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          background-color: #28a745;
+          border-radius: 50%; }
+      #main .navbar .right-section div {
+        position: relative;
+        width: 160px; }
+        #main .navbar .right-section div ul {
+          background-color: #f8f8f8;
+          position: absolute;
+          right: 92px;
+          top: 16px;
+          z-index: 1000;
+          padding: 0;
+          list-style: none !important;
+          text-decoration: none !important;
+          box-shadow: 0 0.25px 0.5px 0 rgba(0, 0, 0, 0.26); }
+          #main .navbar .right-section div ul li.no-dropdown a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 90%;
+            font-weight: 400;
+            color: #2a2b3c !important;
+            text-decoration: none !important;
+            width: 100% !important;
+            min-height: 27px; }
+            #main .navbar .right-section div ul li.no-dropdown a:hover {
+              background-color: #e4e4e4; }
+            #main .navbar .right-section div ul li.no-dropdown a span {
+              margin-top: 0; }
+              #main .navbar .right-section div ul li.no-dropdown a span.p-x-16 {
+                padding: 0 5px; }
 
 .dark-theme #main {
   background-color: #354759;
@@ -125986,20 +126034,68 @@ body, html {
   #main .navbar {
     background-color: #f8f8f8;
     min-height: 64px;
-    border-bottom: 1px solid #eff0f1; }
+    border-bottom: 1px solid #eff0f1;
+    transition-property: box-shadow;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out; }
+    #main .navbar:hover {
+      transition-property: box-shadow;
+      transition-duration: 0.25s;
+      transition-timing-function: ease-out;
+      box-shadow: 0 0.25px 0.5px 0 rgba(0, 0, 0, 0.26); }
     #main .navbar .left-section {
       width: 96%; }
       #main .navbar .left-section .group {
         margin-top: 12px; }
     #main .navbar .right-section {
+      position: relative;
       text-align: right;
       width: 4%; }
       #main .navbar .right-section span {
         margin-top: 12px; }
+        #main .navbar .right-section span:hover img, #main .navbar .right-section span:hover .circle {
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
         #main .navbar .right-section span img {
           width: 40px;
           height: 40px;
           border-radius: 50%; }
+        #main .navbar .right-section span .circle {
+          position: absolute;
+          top: 16px;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          background-color: #28a745;
+          border-radius: 50%; }
+      #main .navbar .right-section div {
+        position: relative;
+        width: 160px; }
+        #main .navbar .right-section div ul {
+          background-color: #f8f8f8;
+          position: absolute;
+          right: 92px;
+          top: 16px;
+          z-index: 1000;
+          padding: 0;
+          list-style: none !important;
+          text-decoration: none !important;
+          box-shadow: 0 0.25px 0.5px 0 rgba(0, 0, 0, 0.26); }
+          #main .navbar .right-section div ul li.no-dropdown a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 90%;
+            font-weight: 400;
+            color: #2a2b3c !important;
+            text-decoration: none !important;
+            width: 100% !important;
+            min-height: 27px; }
+            #main .navbar .right-section div ul li.no-dropdown a:hover {
+              background-color: #e4e4e4; }
+            #main .navbar .right-section div ul li.no-dropdown a span {
+              margin-top: 0; }
+              #main .navbar .right-section div ul li.no-dropdown a span.p-x-16 {
+                padding: 0 5px; }
 
 .dark-theme #main {
   background-color: #354759;
@@ -188828,20 +188924,68 @@ body, html {
   #main .navbar {
     background-color: #f8f8f8;
     min-height: 64px;
-    border-bottom: 1px solid #eff0f1; }
+    border-bottom: 1px solid #eff0f1;
+    transition-property: box-shadow;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out; }
+    #main .navbar:hover {
+      transition-property: box-shadow;
+      transition-duration: 0.25s;
+      transition-timing-function: ease-out;
+      box-shadow: 0 0.25px 0.5px 0 rgba(0, 0, 0, 0.26); }
     #main .navbar .left-section {
       width: 96%; }
       #main .navbar .left-section .group {
         margin-top: 12px; }
     #main .navbar .right-section {
+      position: relative;
       text-align: right;
       width: 4%; }
       #main .navbar .right-section span {
         margin-top: 12px; }
+        #main .navbar .right-section span:hover img, #main .navbar .right-section span:hover .circle {
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
         #main .navbar .right-section span img {
           width: 40px;
           height: 40px;
           border-radius: 50%; }
+        #main .navbar .right-section span .circle {
+          position: absolute;
+          top: 16px;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          background-color: #28a745;
+          border-radius: 50%; }
+      #main .navbar .right-section div {
+        position: relative;
+        width: 160px; }
+        #main .navbar .right-section div ul {
+          background-color: #f8f8f8;
+          position: absolute;
+          right: 92px;
+          top: 16px;
+          z-index: 1000;
+          padding: 0;
+          list-style: none !important;
+          text-decoration: none !important;
+          box-shadow: 0 0.25px 0.5px 0 rgba(0, 0, 0, 0.26); }
+          #main .navbar .right-section div ul li.no-dropdown a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-size: 90%;
+            font-weight: 400;
+            color: #2a2b3c !important;
+            text-decoration: none !important;
+            width: 100% !important;
+            min-height: 27px; }
+            #main .navbar .right-section div ul li.no-dropdown a:hover {
+              background-color: #e4e4e4; }
+            #main .navbar .right-section div ul li.no-dropdown a span {
+              margin-top: 0; }
+              #main .navbar .right-section div ul li.no-dropdown a span.p-x-16 {
+                padding: 0 5px; }
 
 .dark-theme #main {
   background-color: #354759;
