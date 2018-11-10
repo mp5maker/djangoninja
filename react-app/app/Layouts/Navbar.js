@@ -53,9 +53,9 @@ class Navbar extends Component {
                         <InputField />
                     </div>
                     <div className="right-section" onClick={this.handleOnClick}>
-                        <span>
+                        <span className="avatar">
                             <img src="/media/javascript.jpg" alt="profile-photo"/>
-                            <span className="circle text-primary hide-laptop-large-down">
+                            <span className="circle text-primary">
                                 &nbsp;
                             </span>
                         </span>
