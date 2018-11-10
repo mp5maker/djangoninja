@@ -178,3 +178,52 @@
 #sidebar {
     -ms-overflow-style: none; 
 }
+
+// Dark Theme Color
+.dark-theme {
+    #sidebar {
+        background-color: $dark-theme-primary-color;
+        color: $dark-theme-secondary-color;
+        .sidebar-menu {
+            .sidebar-heading {
+                background-color: darken($dark-theme-primary-color, 2%);
+            }
+            .sidebar-content {
+                background-color: $dark-theme-primary-color;
+                color: $dark-theme-secondary-color;
+                .sidebar-list-content {
+                    li.no-dropdown {
+                        a {
+                            color: $dark-theme-secondary-color !important;
+                            &:hover {
+                                background-color: darken($dark-theme-primary-color, 5%);
+                            }
+                            &.active {
+                                background-color: darken($dark-theme-primary-color, 10%);
+                            }
+                        }
+                    }
+                    li.dropdown-group {
+                        div.dropdown-group-category {
+                            &:hover {
+                                background-color: darken($dark-theme-primary-color, 5%);
+                            }
+                        }
+                        div.dropdown-group-list {
+                            li {
+                                a {
+                                    color: $dark-theme-secondary-color !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sidebar-footer {
+                border-top: 1px solid darken($dark-theme-muted-color, 10%);
+                background-color: darken($dark-theme-primary-color, 2%);
+                color: $dark-theme-secondary-color;
+            }
+        }
+    }
+}

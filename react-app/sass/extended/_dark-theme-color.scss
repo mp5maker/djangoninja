@@ -1,0 +1,18 @@
+// Dark Theme Colors
+$dark-theme-primary-color: #263441;
+$dark-theme-secondary-color: darken(#e4e6e8, 10%);
+$dark-theme-danger-color:#f44455;
+$dark-theme-success-color: #0cc2aa;
+$dark-theme-warning-color: #fcc100;
+$dark-theme-violet-color: #a88add;
+$dark-theme-blue-color: #6887ff;
+$dark-theme-pink-color: #f77a99;
+$dark-theme-info-color: #2196f3;
+$dark-theme-muted-color: #6c757d;
+
+// Background Colors
+$dark-theme-background-color: #354759;
+
+// Shades of Dark Theme Colors
+$dark-theme-border: darken($dark-theme-secondary-color, 48.5%);
+$dark-theme-lighten-border: darken($dark-theme-secondary-color, 25%);

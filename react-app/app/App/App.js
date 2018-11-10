@@ -1,9 +1,10 @@
 import { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { DynamicLinks } from '../Routes/Routes'
-import { Sidebar } from '../Layouts/Sidebar'
 import { Dashboard } from '../Pages/Dashboard'
 import { Prescription } from '../Pages/Prescription'
+import { theme } from '../Hoc/Theme'
+import Sidebar from '../Layouts/Sidebar'
 
 class App extends Component {
     constructor(props) {
@@ -34,4 +35,4 @@ class App extends Component {
     }
 }
 
-export { App }
+export default theme(App)

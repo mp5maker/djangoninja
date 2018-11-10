@@ -1,12 +1,18 @@
 // Colors
-$white: white;
-$black: black;
+$white: #f8f8f8;
+$black: #2a2b3c;
+$grey: #424242;
 
 // Light Theme Colors
 $light-theme-primary-color: #373a3c;
 $light-theme-secondary-color: #e4e6e8;
-$light-theme-danger-color: darken(firebrick, 5%);
+$light-theme-danger-color: darken(#f44455, 5%);
 $light-theme-success-color: darken(teal, 5%);
+$light-theme-warning-color: #fcc100;
+$light-theme-violet-color: #a88add;
+$light-theme-blue-color: #6887ff;
+$light-theme-pink-color: #f77a99;
+$light-theme-info-color: #2196f3;
 $light-theme-muted-color: #6c757d;
 
 // Shades of Light Theme Colors

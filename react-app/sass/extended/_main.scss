@@ -28,3 +28,15 @@
         }
     }
 }
+
+// Dark Theme
+.dark-theme {
+    #main {
+        background-color: $dark-theme-background-color;
+        color: $white;
+        .navbar {
+            background-color: $dark-theme-background-color;
+            border-bottom: 1px solid $dark-theme-border; 
+        }
+    }
+}

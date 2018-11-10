@@ -36,3 +36,20 @@
         }
     }
 }
+
+// Dark Theme Color
+.dark-theme {
+    .group {
+        input {
+            background-color: $dark-theme-background-color;
+            color: $dark-theme-secondary-color;
+            border-bottom: 1px solid $dark-theme-lighten-border;
+            &:focus {
+                border-bottom: 1px solid $dark-theme-success-color;
+            }
+            &:focus ~ label, &:valid ~ label {
+                color: $dark-theme-success-color;
+            }
+        }
+    }
+}

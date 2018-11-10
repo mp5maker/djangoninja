@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import { List } from '../Components/List'
 import { DynamicLinks } from '../Routes/Routes' 
 
@@ -347,4 +348,5 @@ class SidebarFooter extends Component {
     }
 }
 
-export { menuList, Sidebar, SidebarHeading, SidebarContent, SidebarLink, SidebarFooter }
+export default withRouter(Sidebar)
+export { menuList, SidebarHeading, SidebarContent, SidebarLink, SidebarFooter }
