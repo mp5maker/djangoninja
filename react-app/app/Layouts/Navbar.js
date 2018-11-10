@@ -59,7 +59,7 @@ class Navbar extends Component {
                                 &nbsp;
                             </span>
                         </span>
-                        <div className={collapse ? 'd-none' : 'navbar-dropdown-expand'}>
+                        <div className={collapse ? 'd-none' : 'navbar-dropdown-expand animated bounceIn'}>
                             <ul>
                                 {
                                     _.map(NavbarDropdrownList, (menu, index) => {

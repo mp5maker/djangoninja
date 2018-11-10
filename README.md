@@ -31,6 +31,7 @@ pip install django-graphiql
 npm init -y
 npm install --save bootstrap jquery popper.js
 npm install --save-dev gulp gulp-concat gulp-sass
+npm install --save animate.css
 ```
 
 #### Angular 1.0 Setup ####

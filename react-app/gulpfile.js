@@ -16,6 +16,7 @@ gulp.task('css', function () {
 var librarycss = [
     "node_modules/font-awesome/css/font-awesome.css",
     "node_modules/react-image-crop/dist/ReactCrop.css",
+    "node_modules/animate.css/animate.css",
 ];
 
 // Library CSS 
