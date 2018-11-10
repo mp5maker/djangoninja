@@ -18,12 +18,15 @@
         }
         &:focus ~ label, &:valid ~ label {
                 top: -20px;
-                font-size: 50%;
+                font-size: 80%;
                 transition: all 0.1s ease-out;
                 color: $light-theme-success-color;
                 span.icon {
                     display: none;
                 }
+        }
+        &:required {
+            box-shadow: none;
         }
    }
    label {
@@ -33,6 +36,23 @@
         transition: all 0.1s ease-out;
         span.icon {
             margin-right: 6px;
+        }
+    }
+}
+
+// Target Chrome, Safari
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .group {
+        input {
+            &:focus ~ label, &:valid ~ label {
+                top: -20px;
+                font-size: 50%;
+                transition: all 0.1s ease-out;
+                color: $light-theme-success-color;
+                span.icon {
+                    display: none;
+                }
+            }
         }
     }
 }

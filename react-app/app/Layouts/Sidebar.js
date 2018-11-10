@@ -309,7 +309,7 @@ class SidebarLink extends Component {
                 {
                     _.map(category.list, (menu, index) => {
                         return (
-                            <List data={menu} key={index} hoverable={true} />
+                            <List data={menu} key={index} hoverable={false} />
                         )
                     }) 
                 }
