@@ -3,7 +3,7 @@ import { ApiHelper } from '../Routes/Routes'
 import { Navbar } from '../Layouts/Navbar'
 import { Card } from '../Components/Card'
 
-class Article extends Component {
+class ArticleDetails extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -14,10 +14,10 @@ class Article extends Component {
     }
 
     componentDidMount() {
-        ApiHelper.getArticleList()
+        ApiHelper.getArticleDetails(this.props.match.params.slug)
             .then((response) => {
                 this.setState({
-                    articles: response.data.results,
+                    articles: [response.data],
                     loading: false,
                     error: false
                 })
@@ -70,13 +70,13 @@ class Article extends Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col">
-                                <h4> Article List </h4>
+                                <h4> Article Details </h4>
                                 <div className="my-3">
                                     <div className="list-group">
                                         {
                                             _.map(articles, (article, index) => {
-                                                return <Card data={ article } key={ index }/>
-                                            }) 
+                                                return <Card data={article} key={index} />
+                                            })
                                         }
                                     </div>
                                 </div>
@@ -89,4 +89,4 @@ class Article extends Component {
     }
 }
 
-export { Article }
+export { ArticleDetails }

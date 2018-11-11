@@ -112,6 +112,12 @@ class ArticleListView(ListAPIView):
     permission_classes = (IsAuthenticated, )
     pagination_class = ApiPageNumberPagination
 
+class ArticleDetailsView(RetrieveAPIView):
+    queryset = Article.objects.all()
+    serializer_class = ArticleSerializer
+    authentication_classes = (SessionAuthentication, BasicAuthentication, TokenAuthentication)
+    permission_classes = (IsAuthenticated, )
+    lookup_field = "slug"
 
 class ArticleSearchView(DocumentViewSet):
     document = ArticleDocument

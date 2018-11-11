@@ -7,6 +7,7 @@ from .views import (
     UserDetailView,
     ArticleListView,
     ArticleSearchView,
+    ArticleDetailsView
 )
 
 app_name = "api"
@@ -25,4 +26,5 @@ urlpatterns = [
     url(r'^user/$', UserListView.as_view(), name='user-list-view'),
     url(r'^user/(?P<id>[0-9]+)$', UserDetailView.as_view(), name='user-detail-view'),
     url(r'^article/$', ArticleListView.as_view(), name='article-list-view'),
+    url(r'^article/(?P<slug>[A-Za-z\-\_]+)$', ArticleDetailsView.as_view(), name='article-details-view'),
 ]

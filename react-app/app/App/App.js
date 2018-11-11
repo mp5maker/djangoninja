@@ -7,6 +7,7 @@ import Sidebar from '../Layouts/Sidebar'
 import { Dashboard } from '../Pages/Dashboard'
 import { Prescription } from '../Pages/Prescription'
 import { Article } from '../Pages/Article'
+import { ArticleDetails } from '../Pages/ArticleDetails'
 
 class App extends Component {
     constructor(props) {
@@ -28,6 +29,7 @@ class App extends Component {
                                 <Route exact path={ DynamicLinks.root } component={ Dashboard } />
                                 <Route path={ DynamicLinks.dashboard } component={ Dashboard } />
                                 <Route path={ DynamicLinks.prescription } component={ Prescription } />
+                                <Route path={ DynamicLinks.articleDetails } component={ ArticleDetails } />
                                 <Route path={ DynamicLinks.article } component={ Article } />
                             </Switch>
                         </div>
