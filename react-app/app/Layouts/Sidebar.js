@@ -16,8 +16,8 @@ const menuList = [
             },
             {
                 "dropdown": false,
-                "name": "Paramedics",
-                "link": "http://sphotonkhan.com",
+                "name": "Article",
+                "link": DynamicLinks.article,
                 "icon": "fa fa-heartbeat",
             },
             {

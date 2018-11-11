@@ -1,10 +1,12 @@
 import { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { DynamicLinks } from '../Routes/Routes'
-import { Dashboard } from '../Pages/Dashboard'
-import { Prescription } from '../Pages/Prescription'
 import { theme } from '../Hoc/Theme'
 import Sidebar from '../Layouts/Sidebar'
+
+import { Dashboard } from '../Pages/Dashboard'
+import { Prescription } from '../Pages/Prescription'
+import { Article } from '../Pages/Article'
 
 class App extends Component {
     constructor(props) {
@@ -26,6 +28,7 @@ class App extends Component {
                                 <Route exact path={ DynamicLinks.root } component={ Dashboard } />
                                 <Route path={ DynamicLinks.dashboard } component={ Dashboard } />
                                 <Route path={ DynamicLinks.prescription } component={ Prescription } />
+                                <Route path={ DynamicLinks.article } component={ Article } />
                             </Switch>
                         </div>
                     </div>
