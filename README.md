@@ -60,6 +60,7 @@ npm install --save prop-types
 npm install --save react-dropzone
 npm install --save react-image-crop
 npm install --save react-markdown
+npm install --save reduc react-redux
 ```
 
 #### POSTGRES Simple Password Change ####
