@@ -47,6 +47,8 @@ var libraryjs = [
     "node_modules/react-dropzone/dist/index.js",
     "node_modules/react-image-crop/dist/ReactCrop.js",
     "node_modules/react-markdown/umd/react-markdown.js",
+    "node_modules/redux/dist/redux.js",
+    "node_modules/react-redux/dist/react-redux.js",
 ];
 
 // Library Javascript
