@@ -1,10 +1,13 @@
 import { render } from 'react-dom'
-import { createStore } from 'redux'
+import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
-import rootReducer from './Reducer/RootReducer'
+import thunk from 'redux-thunk'
+import ArticleReducer from './Reducer/ArticleReducer'
+import fetchArticles from './Actions/ArticleAction'
 import App from './App/App'
 
-const store = createStore(rootReducer)
+const store = createStore(ArticleReducer, applyMiddleware(thunk))
+store.dispatch(fetchArticles());
 
 render(
     <Provider store={ store }>

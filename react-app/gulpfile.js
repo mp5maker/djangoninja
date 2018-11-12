@@ -49,6 +49,7 @@ var libraryjs = [
     "node_modules/react-markdown/umd/react-markdown.js",
     "node_modules/redux/dist/redux.js",
     "node_modules/react-redux/dist/react-redux.js",
+    "node_modules/redux-thunk/dist/redux-thunk.js"
 ];
 
 // Library Javascript

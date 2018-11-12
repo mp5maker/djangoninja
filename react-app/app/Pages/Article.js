@@ -1,4 +1,5 @@
 import { Component } from 'react'
+import { connect } from 'react-redux'
 import { ApiHelper } from '../Routes/Routes'
 import { Navbar } from '../Layouts/Navbar'
 import { Card } from '../Components/Card'
@@ -30,6 +31,7 @@ class Article extends Component {
     }
 
     render() {
+        console.log(this.props)
         const { articles, loading, error } = this.state
         if (loading) {
             return (
@@ -89,4 +91,10 @@ class Article extends Component {
     }
 }
 
-export { Article }
+const mapStateToProps = (state) => {
+    return {
+        articles: state
+    }
+}
+
+export default connect(mapStateToProps)(Article)
