@@ -7,7 +7,7 @@ import Sidebar from '../Layouts/Sidebar'
 import { Dashboard } from '../Pages/Dashboard'
 import { Prescription } from '../Pages/Prescription'
 import Article from '../Pages/Article'
-import { ArticleDetails } from '../Pages/ArticleDetails'
+import ArticleDetails from '../Pages/ArticleDetails'
 
 class App extends Component {
     constructor(props) {

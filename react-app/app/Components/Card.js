@@ -9,10 +9,10 @@ class Card extends Component {
         }
     }
 
-    componentDidUpdate(prevProps, prevState) {
-        if (this.state.data !== prevState.data) {
+    componentDidUpdate(prevProps) {
+        if (this.props.data !== prevProps.data) {
             this.setState({
-                data: this.state.data
+                data: this.props.data
             })
         }
     }

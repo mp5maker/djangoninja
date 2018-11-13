@@ -1,21 +1,41 @@
 import { ApiHelper } from '../Routes/Routes'
 
-export const loadArticles = (articles) => {
-    return {
-        type: "ARTICLE_LIST",
-        articles
-    }
-};
-
-const fetchArticles = () => {
-    return (dispatch) => {
-        return ApiHelper.getArticleList()
-            .then((response) => {
-                dispatch(loadArticles(response.data.results))
-            }).catch((error) => {
-                throw (error)
+const ArticleList = () => (dispatch) => {
+    ApiHelper.getArticleList()
+        .then((response) => {
+            dispatch({
+                type: 'ARTICLE_LIST',
+                articles: response.data.results,
+                loading: false,
+                error: false,
             })
-    }
+        }).catch((error) => {
+            dispatch({
+                type: 'ARTICLE_LIST',
+                articles: [],
+                loading: false,
+                error: error.data,
+            })
+        })
 }
 
-export default fetchArticles
+const ArticleRetrieve = (slug) => (dispatch) => {
+    ApiHelper.getArticleDetails(slug)
+        .then((response) => {
+            dispatch({
+                type: 'ARTICLE_RETRIEVE',
+                articles: [response.data],
+                loading: false,
+                error: false
+            })
+        }).catch((error) => {
+            dispatch({
+                type: 'ARTICLE_RETRIEVE',
+                articles: [],
+                error: error.data,
+                loading: false
+            })
+        })
+}
+
+export { ArticleList, ArticleRetrieve }

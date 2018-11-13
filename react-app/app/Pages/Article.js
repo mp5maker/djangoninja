@@ -1,51 +1,23 @@
 import { Component } from 'react'
 import { connect } from 'react-redux'
-import { ApiHelper } from '../Routes/Routes'
+import { ArticleList } from '../Actions/ArticleAction'
 import { Navbar } from '../Layouts/Navbar'
 import { Card } from '../Components/Card'
+import { Error404 } from '../Components/Error404'
+import { Loading } from '../Components/Loading'
 
 class Article extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            articles: [],
-            loading: true,
-            error: false
-        }
-    }
-
     componentDidMount() {
-        ApiHelper.getArticleList()
-            .then((response) => {
-                this.setState({
-                    articles: response.data.results,
-                    loading: false,
-                    error: false
-                })
-            }).catch((error) => {
-                this.setState({
-                    error: error,
-                    loading: false
-                })
-            })
+        this.props.ArticleList()
     }
 
     render() {
-        console.log(this.props)
-        const { articles, loading, error } = this.state
+        const { articles, loading, error } = this.props.data
         if (loading) {
             return (
                 <div>
                     <Navbar />
-                    <div className="container-fluid">
-                        <div className="row">
-                            <div className="col">
-                                <span>
-                                    Loading ...
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <Loading />
                 </div>
             )
         }
@@ -53,15 +25,7 @@ class Article extends Component {
             return (
                 <div>
                     <Navbar />
-                    <div className="container-fluid">
-                        <div className="row">
-                            <div className="col">
-                                <span>
-                                    There was an error loading the data...
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    <Error404 />
                 </div>
             )
         }
@@ -93,8 +57,8 @@ class Article extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        articles: state
+        data: state.articles
     }
 }
 
-export default connect(mapStateToProps)(Article)
+export default connect(mapStateToProps, { ArticleList })(Article)

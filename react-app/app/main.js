@@ -2,12 +2,10 @@ import { render } from 'react-dom'
 import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
-import ArticleReducer from './Reducer/ArticleReducer'
-import fetchArticles from './Actions/ArticleAction'
+import RootReducer from './Reducer/RootReducer'
 import App from './App/App'
 
-const store = createStore(ArticleReducer, applyMiddleware(thunk))
-store.dispatch(fetchArticles());
+const store = createStore(RootReducer, applyMiddleware(thunk))
 
 render(
     <Provider store={ store }>

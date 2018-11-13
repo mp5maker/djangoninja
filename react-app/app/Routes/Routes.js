@@ -6,15 +6,13 @@ const DynamicLinks = {
     "articleDetails": "/article/:slug",
 }
 
-
-const server = "http://localhost:8000"
 const ApiHelper = {
-    getArticleList: () => axios.get(server + '/api/v1/article/'),
-    getArticleDetails: (param) => axios.get(server + '/api/v1/article/' + param),
-    // createArticle: (data) => axios.post(server + '/api/v1/article/create/', data),
-    // deleteArticle: (id) => axios.delete(server + '/api/v1/article/delete/' + id),
-    // updatePutArticle: (id, data) => axios.put(server + '/api/v1/article/update/' + id, data),
-    // updatePatchArticle: (id, data) => axios.patch(server + '/api/v1/article/update/' + id, data),
+    getArticleList: () => axios.get('/api/v1/article/'),
+    getArticleDetails: (param) => axios.get('/api/v1/article/' + param),
+    // createArticle: (data) => axios.post('/api/v1/article/create/', data),
+    // deleteArticle: (id) => axios.delete('/api/v1/article/delete/' + id),
+    // updatePutArticle: (id, data) => axios.put('/api/v1/article/update/' + id, data),
+    // updatePatchArticle: (id, data) => axios.patch('/api/v1/article/update/' + id, data),
 }
 
 export { DynamicLinks, ApiHelper }
