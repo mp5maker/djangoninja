@@ -14,8 +14,24 @@
     {% verbatim %}
     <div class="container" ng-controller="mainCtrl">
         <div class="row">
-            <div class="col">
-                Landing Page
+            <div class="col my-5">
+                <div class="text-center">
+                    <h4>
+                        Angular App with Service Workers
+                    </h4>
+                </div>
+                <div class="card my-2" ng-repeat="article in articles | orderBy: 'id' track by $index">
+                    <div class="card-header">
+                        {{ article.id }}
+                    </div>
+                    <div class="card-body">
+                        {{ article.title }}
+                    </div> 
+                    <div class="card-footer">
+                        {{ article.body }}
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>

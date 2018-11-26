@@ -89,3 +89,41 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py search_index --rebuild
 ```
+
+#### Service Workers ####
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/static/serviceworker.js', {scope: '/static/'})
+        .then((registration) => {
+            var serviceWorker;
+            if (registration.installing) {
+                serviceWorker = registration.installing;
+            } else if (registration.waiting) {
+                serviceWorker = registration.waiting;
+            } else if (registration.active) {
+                serviceWorker = registration.active;
+            }
+
+            if (serviceWorker) {
+                console.log('Service Worker Phase: ', serviceWorker.state);
+                serviceWorker.addEventListener('statechange', (event) => {
+                    console.log('Service Worker Phase: ' + event.target.state);
+                })
+            }
+        }).catch((error) => {
+            console.log("Service Worker registration failed: ", error);
+        })
+
+* Check Service Worker in Navigator
+* navigator.serviceWorker.register(...path)
+* Scope, determines the path where is should look
+* .installing, .waiting, .active .state
+
+##### serviceworker.js #####
+* install ==> Creating Caches ==> assets
+* activate ==> Clean up all the caches
+* message ==> Get Information from other scripts
+
+**Functional Events**
+* fetch, *sync, *push
+
+          
